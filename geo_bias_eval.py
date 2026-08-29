@@ -40,7 +40,20 @@ import sys
 import numpy as np
 import pandas as pd
 
-sys.path.insert(0, "/Users/m1a4xnetworkprobe./tools/PyGBS_src")
+_PYGBS_CANDIDATES = [
+    os.environ.get("PYGBS_SRC", ""),
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), "PyGBS_src"),
+    "/Users/m1a4xnetworkprobe./tools/PyGBS_src",
+]
+for _candidate in _PYGBS_CANDIDATES:
+    if _candidate and os.path.isdir(_candidate):
+        sys.path.insert(0, _candidate)
+        break
+else:
+    raise ModuleNotFoundError(
+        "PyGBS source not found. Set PYGBS_SRC env var, or clone "
+        "github.com/seai-lab/PyGBS into ./PyGBS_src next to this script."
+    )
 from gbs.ssi.utils import auto_density, construct_weight_matrix, generate_background_points  # noqa: E402
 from gbs.ssi.surprisal import AnalyticalSurprisal  # noqa: E402
 from partition import SSIPartitioner  # noqa: E402
@@ -178,7 +191,7 @@ def get_or_build_null(cache, geom_hash, radius_km, high_err, n_perm, cache_dir, 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--ckpt-dir", default="checkpoints/global_slepian")
+    ap.add_argument("--ckpt_dir", default="checkpoints/global_slepian")
     ap.add_argument("--n-perm", type=int, default=500)
     ap.add_argument("--null-cache-dir", default="data/geo_bias_null_bank")
     ap.add_argument("--out", default=None)
