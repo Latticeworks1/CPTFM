@@ -1,0 +1,20 @@
+/Users/m1a4xnetworkprobe./Documents/CPTFM/precompute_slepian.py:128: DtypeWarning: Columns (0: state) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(csv_path)
+Dataset: 4243 sites from data/global_combined.npz
+
+Computing global SH features (L=10) ...
+  done: 100 dims, 0.0s
+
+Computing Slepian cap 1 (5.29°E, 52.13°N, r=5.0°) ...
+  Slepian: L=80, cap (5.3°, 52.1°) r=5.0°, nmax=24, kept=19/24 (λ>0.1)
+  Basis construction: 0.1s
+  Evaluation: 2.7s
+
+Computing Slepian cap 2 (-108.50°E, 36.20°N, r=20.0°) ...
+  Slepian: L=25, cap (-108.5°, 36.2°) r=20.0°, nmax=40, kept=29/40 (λ>0.1)
+  Basis construction: 0.0s
+  Evaluation: 1.1s
+
+Final feature shape: (4243, 148)  (global_sh=100, cap1=19, cap2=29)
+Saved /Users/m1a4xnetworkprobe./Documents/CPTFM/data/slepian_features.npy  shape=(4243, 148)
+Saved /Users/m1a4xnetworkprobe./Documents/CPTFM/data/slepian_features_meta.npz

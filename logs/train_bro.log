@@ -1,0 +1,321 @@
+/Users/m1a4xnetworkprobe./Documents/CPTFM/cptfm/model.py:41: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(encoder_layer, num_layers=encoder_depth)
+device: mps
+train: 1940  val: 242  test (held-out): 242
+qc [0.686, 42.127] MPa   fs [49.150, 1453.100] kPa
+tokenizer loaded  val_recon 0.0008  K=128  d_vq=32  depth_cond=True
+params: 8.30M
+epoch   1/300  train 9.7729  val 6.6785  mr 0.50  pf 0.00  lr 8.75e-05  gn 241.874  t 61s  mps 195MB
+epoch   2/300  train 3.2032  val 0.7018  mr 0.50  pf 0.00  lr 1.88e-04  gn 91.866  t 60s  mps 195MB
+epoch   3/300  train 1.3860  val 0.9699  mr 0.50  pf 0.00  lr 2.87e-04  gn 53.432  t 60s  mps 195MB
+epoch   4/300  train 1.1148  val 0.7400  mr 0.50  pf 0.00  lr 3.87e-04  gn 53.124  t 61s  mps 195MB
+epoch   5/300  train 1.0504  val 0.6844  mr 0.50  pf 0.00  lr 4.87e-04  gn 50.122  t 62s  mps 195MB
+epoch   6/300  train 1.4038  val 0.8160  mr 0.50  pf 0.00  lr 5.88e-04  gn 56.738  t 65s  mps 195MB
+epoch   7/300  train 1.6544  val 0.8386  mr 0.50  pf 0.00  lr 6.87e-04  gn 53.163  t 66s  mps 195MB
+epoch   8/300  train 1.4413  val 0.8163  mr 0.50  pf 0.00  lr 7.88e-04  gn 44.905  t 64s  mps 195MB
+epoch   9/300  train 1.2964  val 0.8875  mr 0.50  pf 0.00  lr 8.88e-04  gn 43.495  t 64s  mps 195MB
+epoch  10/300  train 1.4428  val 0.8522  mr 0.50  pf 0.00  lr 9.88e-04  gn 41.442  t 64s  mps 195MB
+epoch  11/300  train 1.5783  val 1.2199  mr 0.50  pf 0.00  lr 1.00e-03  gn 41.499  t 63s  mps 195MB
+epoch  12/300  train 1.2889  val 0.4906  mr 0.50  pf 0.00  lr 1.00e-03  gn 34.622  t 61s  mps 195MB
+epoch  13/300  train 0.9909  val 0.5656  mr 0.50  pf 0.00  lr 1.00e-03  gn 24.992  t 61s  mps 195MB
+epoch  14/300  train 0.8212  val 0.4339  mr 0.50  pf 0.00  lr 1.00e-03  gn 19.372  t 61s  mps 195MB
+epoch  15/300  train 0.7826  val 0.5940  mr 0.50  pf 0.00  lr 9.99e-04  gn 16.369  t 60s  mps 195MB
+epoch  16/300  train 0.8001  val 0.3058  mr 0.50  pf 0.00  lr 9.99e-04  gn 15.721  t 60s  mps 195MB
+epoch  17/300  train 0.6744  val 0.2632  mr 0.50  pf 0.00  lr 9.99e-04  gn 13.584  t 60s  mps 195MB
+epoch  18/300  train 0.5929  val 0.1310  mr 0.50  pf 0.00  lr 9.98e-04  gn 11.236  t 61s  mps 195MB
+epoch  19/300  train 0.5875  val 0.1311  mr 0.50  pf 0.00  lr 9.98e-04  gn 9.982  t 60s  mps 195MB
+epoch  20/300  train 0.5487  val 0.1644  mr 0.50  pf 0.00  lr 9.97e-04  gn 8.261  t 60s  mps 195MB
+epoch  21/300  train 0.5210  val 0.1333  mr 0.50  pf 0.00  lr 9.97e-04  gn 7.399  t 60s  mps 195MB
+epoch  22/300  train 0.5075  val 0.1649  mr 0.50  pf 0.00  lr 9.96e-04  gn 6.990  t 60s  mps 195MB
+epoch  23/300  train 0.4950  val 0.0995  mr 0.50  pf 0.00  lr 9.95e-04  gn 6.833  t 60s  mps 195MB
+epoch  24/300  train 0.4539  val 0.0717  mr 0.50  pf 0.00  lr 9.94e-04  gn 5.528  t 60s  mps 195MB
+epoch  25/300  train 0.4857  val 0.1019  mr 0.50  pf 0.00  lr 9.94e-04  gn 5.804  t 60s  mps 195MB
+  test (n=242)  vis  0m  qc 37.117 MPa  fs 1040.543 kPa
+  test (n=242)  vis  5m  qc 10.040 MPa  fs 298.345 kPa
+  test (n=242)  vis 10m  qc 9.446 MPa  fs 241.687 kPa
+  test (n=242)  vis 15m  qc 9.397 MPa  fs 202.627 kPa
+  test (n=242)  vis 20m  qc 8.738 MPa  fs 188.461 kPa
+epoch  26/300  train 0.4651  val 0.0868  mr 0.50  pf 0.00  lr 9.93e-04  gn 5.327  t 60s  mps 195MB
+epoch  27/300  train 0.4421  val 0.0606  mr 0.50  pf 0.00  lr 9.92e-04  gn 4.728  t 60s  mps 195MB
+epoch  28/300  train 0.4187  val 0.0756  mr 0.50  pf 0.00  lr 9.91e-04  gn 3.756  t 60s  mps 195MB
+epoch  29/300  train 0.4330  val 0.0905  mr 0.50  pf 0.00  lr 9.90e-04  gn 4.098  t 60s  mps 195MB
+epoch  30/300  train 0.4275  val 0.0677  mr 0.50  pf 0.00  lr 9.89e-04  gn 3.780  t 60s  mps 195MB
+epoch  31/300  train 0.4159  val 0.0706  mr 0.50  pf 0.00  lr 9.87e-04  gn 3.283  t 60s  mps 195MB
+epoch  32/300  train 0.4086  val 0.0678  mr 0.50  pf 0.00  lr 9.86e-04  gn 3.022  t 60s  mps 195MB
+epoch  33/300  train 0.4058  val 0.0528  mr 0.50  pf 0.00  lr 9.85e-04  gn 3.010  t 60s  mps 195MB
+epoch  34/300  train 0.3899  val 0.0604  mr 0.50  pf 0.00  lr 9.84e-04  gn 2.541  t 60s  mps 195MB
+/Users/m1a4xnetworkprobe./Documents/CPTFM/cptfm/model.py:41: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(encoder_layer, num_layers=encoder_depth)
+device: mps
+train: 1940  val: 242  test (held-out): 242
+qc [0.686, 42.127] MPa   fs [49.150, 1453.100] kPa
+tokenizer loaded  val_recon 0.0008  K=128  d_vq=32  depth_cond=True
+params: 8.33M
+epoch   1/300  train 10.5987  val 6.4311  mr 0.50  pf 0.00  lr 8.75e-05  gn 87.560  t 62s  mps 252MB
+epoch   2/300  train 5.9137  val 4.9444  mr 0.50  pf 0.00  lr 1.88e-04  gn 36.205  t 62s  mps 251MB
+epoch   3/300  train 5.2627  val 4.8021  mr 0.50  pf 0.00  lr 2.87e-04  gn 33.794  t 63s  mps 251MB
+epoch   4/300  train 5.1328  val 4.7169  mr 0.50  pf 0.00  lr 3.87e-04  gn 31.106  t 61s  mps 251MB
+epoch   5/300  train 5.1436  val 4.6296  mr 0.50  pf 0.00  lr 4.87e-04  gn 27.265  t 61s  mps 235MB
+epoch   6/300  train 5.0690  val 4.8281  mr 0.50  pf 0.00  lr 5.88e-04  gn 24.909  t 61s  mps 235MB
+epoch   7/300  train 5.3113  val 4.9806  mr 0.50  pf 0.00  lr 6.87e-04  gn 26.051  t 61s  mps 251MB
+epoch   8/300  train 5.4714  val 5.1673  mr 0.50  pf 0.00  lr 7.88e-04  gn 25.598  t 61s  mps 251MB
+epoch   9/300  train 5.6779  val 5.5903  mr 0.50  pf 0.00  lr 8.88e-04  gn 26.391  t 61s  mps 251MB
+epoch  10/300  train 6.2646  val 6.2020  mr 0.50  pf 0.00  lr 9.88e-04  gn 36.285  t 61s  mps 251MB
+epoch  11/300  train 6.2304  val 6.5948  mr 0.50  pf 0.00  lr 1.00e-03  gn 29.675  t 61s  mps 251MB
+epoch  12/300  train 6.0917  val 5.5212  mr 0.50  pf 0.00  lr 1.00e-03  gn 27.178  t 61s  mps 251MB
+epoch  13/300  train 5.6501  val 5.2992  mr 0.50  pf 0.00  lr 1.00e-03  gn 25.189  t 60s  mps 251MB
+epoch  14/300  train 5.2112  val 4.6255  mr 0.50  pf 0.00  lr 1.00e-03  gn 16.183  t 61s  mps 251MB
+epoch  15/300  train 4.8578  val 4.3928  mr 0.50  pf 0.00  lr 9.99e-04  gn 13.013  t 61s  mps 251MB
+epoch  16/300  train 4.6454  val 4.1362  mr 0.50  pf 0.00  lr 9.99e-04  gn 11.064  t 60s  mps 251MB
+epoch  17/300  train 4.4409  val 4.0683  mr 0.50  pf 0.00  lr 9.99e-04  gn 8.466  t 61s  mps 251MB
+epoch  18/300  train 4.2441  val 3.9508  mr 0.50  pf 0.00  lr 9.98e-04  gn 6.804  t 61s  mps 251MB
+epoch  19/300  train 4.1457  val 3.7556  mr 0.50  pf 0.00  lr 9.98e-04  gn 6.174  t 61s  mps 251MB
+epoch  20/300  train 4.0718  val 3.6554  mr 0.50  pf 0.00  lr 9.97e-04  gn 5.796  t 61s  mps 251MB
+epoch  21/300  train 4.0315  val 3.6403  mr 0.50  pf 0.00  lr 9.97e-04  gn 8.073  t 60s  mps 251MB
+epoch  22/300  train 3.9068  val 3.4588  mr 0.50  pf 0.00  lr 9.96e-04  gn 9.144  t 61s  mps 251MB
+epoch  23/300  train 3.6417  val 3.4644  mr 0.50  pf 0.00  lr 9.95e-04  gn 9.283  t 61s  mps 251MB
+epoch  24/300  train 3.5978  val 3.2680  mr 0.50  pf 0.00  lr 9.94e-04  gn 10.295  t 61s  mps 251MB
+epoch  25/300  train 3.3301  val 2.9336  mr 0.50  pf 0.00  lr 9.94e-04  gn 7.649  t 60s  mps 252MB
+  test (n=242)  vis  0m  qc 9.184 MPa  fs 289.751 kPa
+  test (n=242)  vis  5m  qc 11.411 MPa  fs 401.293 kPa
+  test (n=242)  vis 10m  qc 12.500 MPa  fs 362.263 kPa
+  test (n=242)  vis 15m  qc 12.013 MPa  fs 203.839 kPa
+  test (n=242)  vis 20m  qc 10.168 MPa  fs 179.351 kPa
+epoch  26/300  train 3.1545  val 2.8776  mr 0.50  pf 0.00  lr 9.93e-04  gn 7.906  t 60s  mps 251MB
+epoch  27/300  train 3.0368  val 2.8665  mr 0.50  pf 0.00  lr 9.92e-04  gn 8.179  t 61s  mps 251MB
+epoch  28/300  train 2.9459  val 2.6834  mr 0.50  pf 0.00  lr 9.91e-04  gn 8.761  t 61s  mps 251MB
+epoch  29/300  train 2.9135  val 2.7312  mr 0.50  pf 0.00  lr 9.90e-04  gn 7.912  t 61s  mps 251MB
+epoch  30/300  train 3.1162  val 2.7684  mr 0.50  pf 0.00  lr 9.89e-04  gn 11.267  t 60s  mps 251MB
+epoch  31/300  train 2.8332  val 2.5709  mr 0.50  pf 0.00  lr 9.87e-04  gn 6.215  t 61s  mps 251MB
+epoch  32/300  train 2.7124  val 2.5271  mr 0.50  pf 0.00  lr 9.86e-04  gn 6.452  t 60s  mps 251MB
+epoch  33/300  train 2.6824  val 2.4848  mr 0.50  pf 0.00  lr 9.85e-04  gn 6.905  t 60s  mps 251MB
+epoch  34/300  train 2.7393  val 2.4226  mr 0.50  pf 0.00  lr 9.84e-04  gn 8.462  t 61s  mps 251MB
+epoch  35/300  train 2.6986  val 2.6950  mr 0.50  pf 0.00  lr 9.82e-04  gn 7.542  t 60s  mps 251MB
+epoch  36/300  train 2.8316  val 2.4328  mr 0.50  pf 0.00  lr 9.81e-04  gn 9.570  t 61s  mps 251MB
+epoch  37/300  train 2.7130  val 2.3664  mr 0.50  pf 0.00  lr 9.79e-04  gn 8.413  t 60s  mps 251MB
+epoch  38/300  train 2.5504  val 2.3826  mr 0.50  pf 0.00  lr 9.78e-04  gn 5.887  t 60s  mps 251MB
+epoch  39/300  train 2.6182  val 2.3250  mr 0.50  pf 0.00  lr 9.76e-04  gn 7.899  t 61s  mps 251MB
+epoch  40/300  train 2.5168  val 2.2114  mr 0.50  pf 0.00  lr 9.74e-04  gn 6.361  t 60s  mps 252MB
+epoch  41/300  train 2.5974  val 2.3362  mr 0.50  pf 0.00  lr 9.73e-04  gn 7.833  t 61s  mps 251MB
+epoch  42/300  train 2.5472  val 2.2494  mr 0.50  pf 0.00  lr 9.71e-04  gn 7.299  t 60s  mps 251MB
+epoch  43/300  train 2.4874  val 2.1733  mr 0.50  pf 0.00  lr 9.69e-04  gn 7.699  t 61s  mps 251MB
+epoch  44/300  train 2.4631  val 2.2030  mr 0.50  pf 0.00  lr 9.67e-04  gn 6.912  t 60s  mps 251MB
+epoch  45/300  train 2.4544  val 2.1492  mr 0.50  pf 0.00  lr 9.65e-04  gn 6.653  t 61s  mps 251MB
+epoch  46/300  train 2.4457  val 2.1729  mr 0.50  pf 0.00  lr 9.63e-04  gn 6.688  t 60s  mps 251MB
+epoch  47/300  train 2.4034  val 2.1389  mr 0.50  pf 0.00  lr 9.61e-04  gn 5.640  t 61s  mps 251MB
+epoch  48/300  train 2.3961  val 2.1479  mr 0.50  pf 0.00  lr 9.59e-04  gn 6.138  t 60s  mps 251MB
+epoch  49/300  train 2.3818  val 2.1875  mr 0.50  pf 0.00  lr 9.57e-04  gn 5.970  t 60s  mps 251MB
+epoch  50/300  train 2.3431  val 2.1720  mr 0.50  pf 0.00  lr 9.55e-04  gn 5.936  t 60s  mps 251MB
+  test (n=242)  vis  0m  qc 10.522 MPa  fs 297.821 kPa
+  test (n=242)  vis  5m  qc 10.429 MPa  fs 489.647 kPa
+  test (n=242)  vis 10m  qc 10.575 MPa  fs 409.671 kPa
+  test (n=242)  vis 15m  qc 11.087 MPa  fs 93.970 kPa
+  test (n=242)  vis 20m  qc 10.444 MPa  fs 68.389 kPa
+epoch  51/300  train 2.3794  val 2.3422  mr 0.50  pf 0.00  lr 9.52e-04  gn 6.370  t 60s  mps 252MB
+epoch  52/300  train 2.4048  val 2.1724  mr 0.50  pf 0.00  lr 9.50e-04  gn 6.611  t 61s  mps 251MB
+epoch  53/300  train 2.3430  val 2.1389  mr 0.50  pf 0.00  lr 9.48e-04  gn 5.059  t 61s  mps 251MB
+epoch  54/300  train 2.3164  val 2.1699  mr 0.50  pf 0.00  lr 9.45e-04  gn 4.814  t 60s  mps 251MB
+epoch  55/300  train 2.3109  val 2.0600  mr 0.50  pf 0.00  lr 9.43e-04  gn 5.531  t 60s  mps 251MB
+epoch  56/300  train 2.2716  val 2.0636  mr 0.50  pf 0.00  lr 9.40e-04  gn 4.801  t 60s  mps 251MB
+epoch  57/300  train 2.2426  val 2.0801  mr 0.50  pf 0.00  lr 9.38e-04  gn 4.652  t 61s  mps 251MB
+epoch  58/300  train 2.3420  val 2.0789  mr 0.50  pf 0.00  lr 9.35e-04  gn 7.581  t 60s  mps 251MB
+epoch  59/300  train 2.2992  val 2.0666  mr 0.50  pf 0.00  lr 9.32e-04  gn 6.144  t 60s  mps 235MB
+epoch  60/300  train 2.2588  val 2.0032  mr 0.50  pf 0.00  lr 9.29e-04  gn 6.440  t 60s  mps 251MB
+epoch  61/300  train 2.2689  val 2.0559  mr 0.50  pf 0.00  lr 9.27e-04  gn 6.092  t 61s  mps 235MB
+epoch  62/300  train 2.2477  val 1.9774  mr 0.50  pf 0.00  lr 9.24e-04  gn 6.079  t 62s  mps 251MB
+epoch  63/300  train 2.2112  val 2.0076  mr 0.50  pf 0.00  lr 9.21e-04  gn 5.515  t 60s  mps 251MB
+epoch  64/300  train 2.2088  val 1.9542  mr 0.50  pf 0.00  lr 9.18e-04  gn 5.607  t 60s  mps 251MB
+epoch  65/300  train 2.1694  val 1.9767  mr 0.50  pf 0.00  lr 9.15e-04  gn 5.463  t 60s  mps 251MB
+epoch  66/300  train 2.1614  val 1.9775  mr 0.50  pf 0.00  lr 9.12e-04  gn 4.072  t 60s  mps 251MB
+epoch  67/300  train 2.1729  val 2.0135  mr 0.50  pf 0.00  lr 9.09e-04  gn 3.981  t 60s  mps 251MB
+epoch  68/300  train 2.2015  val 2.0524  mr 0.50  pf 0.00  lr 9.06e-04  gn 4.714  t 60s  mps 251MB
+epoch  69/300  train 2.2524  val 2.0234  mr 0.50  pf 0.00  lr 9.03e-04  gn 5.790  t 60s  mps 251MB
+epoch  70/300  train 2.1919  val 2.0178  mr 0.50  pf 0.00  lr 8.99e-04  gn 4.712  t 60s  mps 251MB
+epoch  71/300  train 2.1704  val 2.1024  mr 0.50  pf 0.00  lr 8.96e-04  gn 4.302  t 60s  mps 251MB
+epoch  72/300  train 2.2492  val 1.9858  mr 0.50  pf 0.00  lr 8.93e-04  gn 6.363  t 60s  mps 251MB
+epoch  73/300  train 2.1867  val 2.0706  mr 0.50  pf 0.00  lr 8.90e-04  gn 5.907  t 60s  mps 251MB
+epoch  74/300  train 2.1675  val 1.9616  mr 0.50  pf 0.00  lr 8.86e-04  gn 5.743  t 60s  mps 251MB
+epoch  75/300  train 2.1189  val 1.8904  mr 0.50  pf 0.00  lr 8.83e-04  gn 4.676  t 60s  mps 251MB
+  test (n=242)  vis  0m  qc 11.726 MPa  fs 159.357 kPa
+  test (n=242)  vis  5m  qc 10.268 MPa  fs 348.130 kPa
+  test (n=242)  vis 10m  qc 10.027 MPa  fs 223.153 kPa
+  test (n=242)  vis 15m  qc 10.252 MPa  fs 69.876 kPa
+  test (n=242)  vis 20m  qc 8.947 MPa  fs 68.855 kPa
+epoch  76/300  train 2.0934  val 1.9508  mr 0.50  pf 0.00  lr 8.79e-04  gn 3.278  t 60s  mps 252MB
+epoch  77/300  train 2.1763  val 2.0021  pval 5.1107  mr 0.50  pf 0.00  lr 8.76e-04  gn 5.784  t 61s  mps 278MB
+epoch  78/300  train 2.1822  val 1.8882  pval 5.1704  mr 0.50  pf 0.01  lr 8.72e-04  gn 5.195  t 61s  mps 307MB
+epoch  79/300  train 2.1619  val 1.9026  pval 4.6892  mr 0.51  pf 0.01  lr 8.68e-04  gn 6.407  t 61s  mps 278MB
+epoch  80/300  train 2.1155  val 1.9916  pval 4.9999  mr 0.51  pf 0.02  lr 8.65e-04  gn 3.967  t 61s  mps 278MB
+epoch  81/300  train 2.1017  val 2.0366  pval 5.0903  mr 0.51  pf 0.02  lr 8.61e-04  gn 3.222  t 60s  mps 278MB
+epoch  82/300  train 2.1410  val 1.9529  pval 4.6397  mr 0.51  pf 0.03  lr 8.57e-04  gn 5.410  t 60s  mps 278MB
+epoch  83/300  train 2.2236  val 1.9611  pval 3.5044  mr 0.51  pf 0.03  lr 8.54e-04  gn 5.613  t 60s  mps 292MB
+epoch  84/300  train 2.2928  val 2.0267  pval 3.5088  mr 0.52  pf 0.03  lr 8.50e-04  gn 5.516  t 60s  mps 291MB
+epoch  85/300  train 2.2454  val 1.9375  pval 3.3913  mr 0.52  pf 0.04  lr 8.46e-04  gn 4.759  t 60s  mps 291MB
+epoch  86/300  train 2.3518  val 1.9938  pval 3.5918  mr 0.52  pf 0.04  lr 8.42e-04  gn 5.700  t 60s  mps 318MB
+epoch  87/300  train 2.2276  val 1.8880  pval 3.1694  mr 0.52  pf 0.05  lr 8.38e-04  gn 5.737  t 60s  mps 290MB
+epoch  88/300  train 2.4831  val 2.0311  pval 3.3774  mr 0.53  pf 0.05  lr 8.34e-04  gn 5.883  t 60s  mps 285MB
+epoch  89/300  train 2.3470  val 1.9621  pval 3.3075  mr 0.53  pf 0.05  lr 8.30e-04  gn 5.363  t 60s  mps 290MB
+epoch  90/300  train 2.1894  val 1.9495  pval 3.0997  mr 0.53  pf 0.06  lr 8.26e-04  gn 3.543  t 60s  mps 320MB
+epoch  91/300  train 2.1679  val 1.8787  pval 3.0198  mr 0.53  pf 0.06  lr 8.22e-04  gn 3.713  t 60s  mps 289MB
+epoch  92/300  train 2.1314  val 1.9315  pval 3.2017  mr 0.53  pf 0.07  lr 8.18e-04  gn 6.246  t 60s  mps 289MB
+epoch  93/300  train 2.2048  val 1.8339  pval 2.8871  mr 0.54  pf 0.07  lr 8.14e-04  gn 5.114  t 60s  mps 304MB
+epoch  94/300  train 2.1092  val 1.8723  pval 4.0583  mr 0.54  pf 0.07  lr 8.09e-04  gn 5.573  t 62s  mps 304MB
+epoch  95/300  train 2.2155  val 1.8828  pval 3.0197  mr 0.54  pf 0.08  lr 8.05e-04  gn 4.004  t 60s  mps 277MB
+epoch  96/300  train 2.4936  val 1.9192  pval 2.8024  mr 0.54  pf 0.08  lr 8.01e-04  gn 4.505  t 58s  mps 261MB
+epoch  97/300  train 2.2250  val 1.9131  pval 2.8288  mr 0.54  pf 0.09  lr 7.96e-04  gn 3.645  t 60s  mps 286MB
+epoch  98/300  train 2.1657  val 1.9087  pval 2.9208  mr 0.55  pf 0.09  lr 7.92e-04  gn 5.076  t 60s  mps 283MB
+epoch  99/300  train 2.1962  val 1.8667  pval 2.7498  mr 0.55  pf 0.10  lr 7.88e-04  gn 3.606  t 62s  mps 283MB
+epoch 100/300  train 2.4648  val 1.9807  pval 2.8079  mr 0.55  pf 0.10  lr 7.83e-04  gn 5.643  t 60s  mps 259MB
+  test (n=242)  vis  0m  qc 10.089 MPa  fs 157.100 kPa
+  test (n=242)  vis  5m  qc 10.970 MPa  fs 134.755 kPa
+  test (n=242)  vis 10m  qc 11.431 MPa  fs 94.406 kPa
+  test (n=242)  vis 15m  qc 11.784 MPa  fs 79.927 kPa
+  test (n=242)  vis 20m  qc 10.623 MPa  fs 79.641 kPa
+epoch 101/300  train 2.4388  val 1.8918  pval 3.0522  mr 0.55  pf 0.10  lr 7.79e-04  gn 5.980  t 60s  mps 262MB
+epoch 102/300  train 2.2707  val 1.8978  pval 2.7521  mr 0.55  pf 0.11  lr 7.74e-04  gn 5.410  t 59s  mps 258MB
+epoch 103/300  train 2.2110  val 1.9350  pval 2.7924  mr 0.56  pf 0.11  lr 7.70e-04  gn 3.966  t 62s  mps 262MB
+epoch 104/300  train 2.3006  val 1.8599  pval 2.9116  mr 0.56  pf 0.12  lr 7.65e-04  gn 4.046  t 59s  mps 262MB
+epoch 105/300  train 2.3473  val 1.8770  pval 2.8816  mr 0.56  pf 0.12  lr 7.61e-04  gn 3.848  t 58s  mps 257MB
+epoch 106/300  train 2.4544  val 1.9783  pval 3.3681  mr 0.56  pf 0.12  lr 7.56e-04  gn 4.550  t 60s  mps 283MB
+epoch 107/300  train 2.2139  val 1.9266  pval 2.9466  mr 0.56  pf 0.13  lr 7.52e-04  gn 4.149  t 60s  mps 261MB
+epoch 108/300  train 2.2824  val 1.8714  pval 2.6857  mr 0.57  pf 0.13  lr 7.47e-04  gn 4.883  t 59s  mps 256MB
+epoch 109/300  train 2.4630  val 1.8516  pval 2.8563  mr 0.57  pf 0.14  lr 7.42e-04  gn 4.502  t 63s  mps 205MB
+epoch 110/300  train 2.4522  val 1.8407  pval 2.6573  mr 0.57  pf 0.14  lr 7.37e-04  gn 4.694  t 59s  mps 295MB
+epoch 111/300  train 2.3011  val 1.8546  pval 2.7305  mr 0.57  pf 0.15  lr 7.33e-04  gn 4.647  t 59s  mps 294MB
+epoch 112/300  train 2.2221  val 1.8987  pval 2.7379  mr 0.57  pf 0.15  lr 7.28e-04  gn 4.136  t 60s  mps 306MB
+epoch 113/300  train 2.4481  val 1.8764  pval 2.6632  mr 0.58  pf 0.15  lr 7.23e-04  gn 4.155  t 59s  mps 314MB
+epoch 114/300  train 2.3554  val 1.8618  pval 2.7738  mr 0.58  pf 0.16  lr 7.18e-04  gn 4.046  t 59s  mps 276MB
+epoch 115/300  train 2.2485  val 1.9426  pval 2.9365  mr 0.58  pf 0.16  lr 7.13e-04  gn 3.831  t 60s  mps 282MB
+epoch 116/300  train 2.1721  val 1.8049  pval 2.6531  mr 0.58  pf 0.17  lr 7.09e-04  gn 3.576  t 59s  mps 282MB
+epoch 117/300  train 2.1439  val 1.8206  pval 2.6583  mr 0.59  pf 0.17  lr 7.04e-04  gn 3.367  t 59s  mps 305MB
+epoch 118/300  train 2.2199  val 1.8915  pval 2.6225  mr 0.59  pf 0.18  lr 6.99e-04  gn 4.114  t 58s  mps 289MB
+epoch 119/300  train 2.4443  val 1.8081  pval 2.5911  mr 0.59  pf 0.18  lr 6.94e-04  gn 4.332  t 61s  mps 314MB
+epoch 120/300  train 2.1122  val 2.0257  pval 2.5915  mr 0.59  pf 0.18  lr 6.89e-04  gn 3.193  t 59s  mps 292MB
+epoch 121/300  train 2.3619  val 1.9328  pval 2.7131  mr 0.59  pf 0.19  lr 6.84e-04  gn 4.821  t 72s  mps 321MB
+epoch 122/300  train 2.3751  val 1.8986  pval 2.5721  mr 0.60  pf 0.19  lr 6.79e-04  gn 3.525  t 59s  mps 321MB
+epoch 123/300  train 2.1946  val 1.7679  pval 2.4917  mr 0.60  pf 0.20  lr 6.74e-04  gn 2.915  t 60s  mps 314MB
+epoch 124/300  train 2.3081  val 1.8206  pval 2.5465  mr 0.60  pf 0.20  lr 6.69e-04  gn 2.255  t 58s  mps 295MB
+epoch 125/300  train 2.2124  val 1.8990  pval 2.6100  mr 0.60  pf 0.20  lr 6.64e-04  gn 2.697  t 60s  mps 241MB
+  test (n=242)  vis  0m  qc 10.274 MPa  fs 147.620 kPa
+  test (n=242)  vis  5m  qc 11.115 MPa  fs 111.658 kPa
+  test (n=242)  vis 10m  qc 10.945 MPa  fs 101.637 kPa
+  test (n=242)  vis 15m  qc 10.270 MPa  fs 71.325 kPa
+  test (n=242)  vis 20m  qc 8.519 MPa  fs 69.518 kPa
+epoch 126/300  train 2.2836  val 1.8110  pval 2.5207  mr 0.60  pf 0.21  lr 6.59e-04  gn 4.548  t 60s  mps 312MB
+epoch 127/300  train 2.1793  val 1.7486  pval 2.4951  mr 0.61  pf 0.21  lr 6.53e-04  gn 4.051  t 60s  mps 319MB
+epoch 128/300  train 2.1427  val 1.7512  pval 2.5557  mr 0.61  pf 0.22  lr 6.48e-04  gn 3.009  t 58s  mps 302MB
+epoch 129/300  train 2.2107  val 1.7346  pval 2.4886  mr 0.61  pf 0.22  lr 6.43e-04  gn 3.878  t 58s  mps 305MB
+epoch 130/300  train 2.2859  val 1.7915  pval 2.5110  mr 0.61  pf 0.22  lr 6.38e-04  gn 3.390  t 59s  mps 318MB
+epoch 131/300  train 2.2147  val 1.8054  pval 2.5102  mr 0.61  pf 0.23  lr 6.33e-04  gn 4.753  t 58s  mps 318MB
+epoch 132/300  train 2.1646  val 1.8241  pval 2.7072  mr 0.62  pf 0.23  lr 6.28e-04  gn 5.391  t 59s  mps 318MB
+epoch 133/300  train 2.2956  val 1.7894  pval 2.7255  mr 0.62  pf 0.24  lr 6.23e-04  gn 3.892  t 60s  mps 310MB
+epoch 134/300  train 2.0948  val 1.7745  pval 2.7608  mr 0.62  pf 0.24  lr 6.17e-04  gn 4.895  t 59s  mps 317MB
+epoch 135/300  train 2.3559  val 1.7868  pval 2.4865  mr 0.62  pf 0.25  lr 6.12e-04  gn 3.423  t 60s  mps 245MB
+epoch 136/300  train 2.2655  val 1.7829  pval 2.5408  mr 0.62  pf 0.25  lr 6.07e-04  gn 2.670  t 81s  mps 302MB
+epoch 137/300  train 2.3072  val 1.7724  pval 2.4474  mr 0.63  pf 0.25  lr 6.02e-04  gn 2.805  t 59s  mps 316MB
+epoch 138/300  train 2.2966  val 1.8085  pval 2.4371  mr 0.63  pf 0.26  lr 5.96e-04  gn 4.098  t 68s  mps 299MB
+epoch 139/300  train 2.3815  val 1.7457  pval 2.4922  mr 0.63  pf 0.26  lr 5.91e-04  gn 3.119  t 57s  mps 234MB
+epoch 140/300  train 2.1749  val 1.7119  pval 2.5381  mr 0.63  pf 0.27  lr 5.86e-04  gn 2.970  t 60s  mps 266MB
+epoch 141/300  train 2.1520  val 1.7663  pval 2.5120  mr 0.64  pf 0.27  lr 5.80e-04  gn 3.439  t 59s  mps 295MB
+epoch 142/300  train 2.3473  val 1.7788  pval 2.5188  mr 0.64  pf 0.27  lr 5.75e-04  gn 4.106  t 57s  mps 303MB
+epoch 143/300  train 2.2350  val 1.7572  pval 2.5286  mr 0.64  pf 0.28  lr 5.70e-04  gn 2.699  t 60s  mps 274MB
+epoch 144/300  train 2.3548  val 1.7609  pval 2.4685  mr 0.64  pf 0.28  lr 5.65e-04  gn 2.526  t 57s  mps 296MB
+epoch 145/300  train 2.2203  val 1.7109  pval 2.4258  mr 0.64  pf 0.29  lr 5.59e-04  gn 2.606  t 58s  mps 296MB
+epoch 146/300  train 2.1516  val 1.7107  pval 2.4884  mr 0.65  pf 0.29  lr 5.54e-04  gn 4.004  t 65s  mps 286MB
+epoch 147/300  train 2.1900  val 1.9032  pval 2.7582  mr 0.65  pf 0.30  lr 5.49e-04  gn 3.737  t 61s  mps 244MB
+epoch 148/300  train 2.1878  val 1.7881  pval 2.6989  mr 0.65  pf 0.30  lr 5.43e-04  gn 6.614  t 62s  mps 302MB
+epoch 149/300  train 2.2209  val 1.7907  pval 2.4428  mr 0.65  pf 0.30  lr 5.38e-04  gn 5.053  t 59s  mps 296MB
+epoch 150/300  train 2.1914  val 1.7876  pval 2.5224  mr 0.65  pf 0.31  lr 5.32e-04  gn 3.039  t 70s  mps 300MB
+  test (n=242)  vis  0m  qc 12.523 MPa  fs 155.945 kPa
+  test (n=242)  vis  5m  qc 10.595 MPa  fs 107.141 kPa
+  test (n=242)  vis 10m  qc 10.975 MPa  fs 95.096 kPa
+  test (n=242)  vis 15m  qc 10.846 MPa  fs 69.425 kPa
+  test (n=242)  vis 20m  qc 9.542 MPa  fs 73.016 kPa
+epoch 151/300  train 2.1987  val 1.7602  pval 2.7468  mr 0.66  pf 0.31  lr 5.27e-04  gn 2.850  t 57s  mps 302MB
+epoch 152/300  train 2.4641  val 1.7146  pval 2.4519  mr 0.66  pf 0.32  lr 5.22e-04  gn 2.532  t 59s  mps 286MB
+epoch 153/300  train 2.2640  val 1.7061  pval 2.5431  mr 0.66  pf 0.32  lr 5.16e-04  gn 3.275  t 58s  mps 296MB
+epoch 154/300  train 2.0883  val 1.7206  pval 2.4694  mr 0.66  pf 0.33  lr 5.11e-04  gn 3.568  t 73s  mps 222MB
+epoch 155/300  train 2.0706  val 1.7180  pval 2.3886  mr 0.66  pf 0.33  lr 5.06e-04  gn 2.560  t 62s  mps 295MB
+epoch 156/300  train 2.3373  val 1.6772  pval 2.5654  mr 0.67  pf 0.33  lr 5.00e-04  gn 2.097  t 56s  mps 294MB
+epoch 157/300  train 2.1537  val 1.6834  pval 2.4931  mr 0.67  pf 0.34  lr 4.95e-04  gn 2.444  t 57s  mps 284MB
+epoch 158/300  train 2.1033  val 1.6891  pval 2.5272  mr 0.67  pf 0.34  lr 4.90e-04  gn 3.036  t 60s  mps 294MB
+epoch 159/300  train 2.1315  val 1.7110  pval 2.4294  mr 0.67  pf 0.35  lr 4.84e-04  gn 3.070  t 67s  mps 288MB
+epoch 160/300  train 2.3334  val 1.7511  pval 2.4200  mr 0.68  pf 0.35  lr 4.79e-04  gn 2.776  t 59s  mps 277MB
+epoch 161/300  train 2.3560  val 1.6623  pval 2.4160  mr 0.68  pf 0.35  lr 4.74e-04  gn 3.078  t 58s  mps 275MB
+epoch 162/300  train 2.3130  val 1.8184  pval 2.4068  mr 0.68  pf 0.36  lr 4.68e-04  gn 3.778  t 57s  mps 288MB
+epoch 163/300  train 2.2542  val 1.7522  pval 2.4409  mr 0.68  pf 0.36  lr 4.63e-04  gn 6.656  t 61s  mps 283MB
+epoch 164/300  train 2.2268  val 1.6716  pval 2.4433  mr 0.68  pf 0.37  lr 4.57e-04  gn 3.287  t 57s  mps 295MB
+epoch 165/300  train 2.1194  val 1.6371  pval 2.4241  mr 0.69  pf 0.37  lr 4.52e-04  gn 3.017  t 60s  mps 286MB
+epoch 166/300  train 2.2043  val 1.7249  pval 2.4274  mr 0.69  pf 0.38  lr 4.47e-04  gn 2.440  t 58s  mps 298MB
+epoch 167/300  train 2.1817  val 1.6798  pval 2.4190  mr 0.69  pf 0.38  lr 4.41e-04  gn 2.547  t 58s  mps 298MB
+epoch 168/300  train 2.4135  val 1.6719  pval 2.3968  mr 0.69  pf 0.38  lr 4.36e-04  gn 2.754  t 57s  mps 271MB
+epoch 169/300  train 2.1739  val 1.6927  pval 2.3746  mr 0.69  pf 0.39  lr 4.31e-04  gn 4.885  t 59s  mps 269MB
+epoch 170/300  train 2.2676  val 1.7353  pval 2.3934  mr 0.70  pf 0.39  lr 4.26e-04  gn 4.601  t 65s  mps 282MB
+epoch 171/300  train 2.1527  val 1.6818  pval 2.3942  mr 0.70  pf 0.40  lr 4.20e-04  gn 3.921  t 58s  mps 297MB
+/Users/m1a4xnetworkprobe./Documents/CPTFM/cptfm/model.py:41: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(encoder_layer, num_layers=encoder_depth)
+device: mps
+train: 1940  val: 242  test (held-out): 242
+qc [0.686, 42.127] MPa   fs [49.150, 1453.100] kPa
+tokenizer loaded  val_recon 0.0008  K=128  d_vq=32  depth_cond=True
+params: 8.33M
+resumed from last.pt epoch 171  best_val 1.8904
+epoch 172/300  train 2.2753  val 1.6368  pval 2.4043  mr 0.70  pf 0.40  lr 4.15e-04  gn 2.304  t 61s  mps 336MB
+epoch 173/300  train 2.2651  val 1.6629  pval 2.3877  mr 0.70  pf 0.40  lr 4.10e-04  gn 2.651  t 60s  mps 186MB
+epoch 174/300  train 2.1865  val 1.6509  pval 2.5027  mr 0.70  pf 0.41  lr 4.04e-04  gn 2.376  t 92s  mps 300MB
+epoch 175/300  train 2.1811  val 1.6819  pval 2.4247  mr 0.71  pf 0.41  lr 3.99e-04  gn 3.685  t 61s  mps 331MB
+  test (n=242)  vis  0m  qc 10.720 MPa  fs 151.437 kPa
+  test (n=242)  vis  5m  qc 10.286 MPa  fs 104.630 kPa
+  test (n=242)  vis 10m  qc 10.783 MPa  fs 90.905 kPa
+  test (n=242)  vis 15m  qc 10.220 MPa  fs 59.819 kPa
+  test (n=242)  vis 20m  qc 9.417 MPa  fs 66.890 kPa
+epoch 176/300  train 2.1353  val 1.7066  pval 2.4096  mr 0.71  pf 0.42  lr 3.94e-04  gn 2.932  t 70s  mps 300MB
+epoch 177/300  train 2.2408  val 1.6916  pval 2.4254  mr 0.71  pf 0.42  lr 3.89e-04  gn 3.931  t 62s  mps 327MB
+epoch 178/300  train 2.2434  val 1.7312  pval 2.4130  mr 0.71  pf 0.42  lr 3.84e-04  gn 3.733  t 154s  mps 271MB
+epoch 179/300  train 2.2274  val 1.6939  pval 2.3917  mr 0.71  pf 0.43  lr 3.78e-04  gn 2.917  t 61s  mps 305MB
+epoch 180/300  train 2.2733  val 1.7266  pval 2.3525  mr 0.72  pf 0.43  lr 3.73e-04  gn 2.940  t 60s  mps 263MB
+epoch 181/300  train 2.2649  val 1.6959  pval 2.4459  mr 0.72  pf 0.44  lr 3.68e-04  gn 3.140  t 60s  mps 304MB
+epoch 182/300  train 2.1149  val 1.6912  pval 2.4072  mr 0.72  pf 0.44  lr 3.63e-04  gn 3.661  t 61s  mps 306MB
+epoch 183/300  train 2.2040  val 1.6739  pval 2.3858  mr 0.72  pf 0.45  lr 3.58e-04  gn 2.541  t 65s  mps 278MB
+epoch 184/300  train 2.2828  val 1.6468  pval 2.4024  mr 0.72  pf 0.45  lr 3.53e-04  gn 2.634  t 420s  mps 301MB
+epoch 185/300  train 2.2333  val 1.6704  pval 2.4275  mr 0.73  pf 0.45  lr 3.48e-04  gn 2.668  t 59s  mps 330MB
+epoch 186/300  train 2.3753  val 1.6830  pval 2.3883  mr 0.73  pf 0.46  lr 3.43e-04  gn 3.149  t 72s  mps 195MB
+epoch 187/300  train 2.2205  val 1.6315  pval 2.3743  mr 0.73  pf 0.46  lr 3.37e-04  gn 2.574  t 91s  mps 300MB
+epoch 188/300  train 2.3896  val 1.6499  pval 2.3805  mr 0.73  pf 0.47  lr 3.32e-04  gn 1.776  t 56s  mps 313MB
+epoch 189/300  train 2.3119  val 1.6741  pval 2.4330  mr 0.74  pf 0.47  lr 3.27e-04  gn 2.273  t 59s  mps 311MB
+epoch 190/300  train 2.2250  val 1.6789  pval 2.3791  mr 0.74  pf 0.47  lr 3.22e-04  gn 4.464  t 60s  mps 272MB
+epoch 191/300  train 2.1440  val 1.6652  pval 2.4176  mr 0.74  pf 0.48  lr 3.17e-04  gn 3.594  t 78s  mps 312MB
+epoch 192/300  train 2.2225  val 1.6676  pval 2.3627  mr 0.74  pf 0.48  lr 3.12e-04  gn 2.234  t 62s  mps 311MB
+epoch 193/300  train 2.2519  val 1.7109  pval 2.4008  mr 0.74  pf 0.49  lr 3.08e-04  gn 3.747  t 59s  mps 334MB
+epoch 194/300  train 2.1076  val 1.6355  pval 2.3761  mr 0.75  pf 0.49  lr 3.03e-04  gn 4.096  t 60s  mps 202MB
+epoch 195/300  train 2.2296  val 1.6279  pval 2.3816  mr 0.75  pf 0.50  lr 2.98e-04  gn 2.117  t 66s  mps 201MB
+epoch 196/300  train 2.2965  val 1.6356  pval 2.3660  mr 0.75  pf 0.50  lr 2.93e-04  gn 2.630  t 76s  mps 295MB
+epoch 197/300  train 2.2841  val 1.6404  pval 2.3555  mr 0.75  pf 0.50  lr 2.88e-04  gn 2.519  t 57s  mps 325MB
+epoch 198/300  train 2.1840  val 1.6434  pval 2.3811  mr 0.75  pf 0.51  lr 2.83e-04  gn 2.530  t 59s  mps 196MB
+epoch 199/300  train 2.2599  val 1.6367  pval 2.4470  mr 0.75  pf 0.51  lr 2.78e-04  gn 2.428  t 56s  mps 300MB
+epoch 200/300  train 2.3436  val 1.6458  pval 2.3765  mr 0.75  pf 0.52  lr 2.74e-04  gn 2.207  t 57s  mps 304MB
+  test (n=242)  vis  0m  qc 9.788 MPa  fs 146.958 kPa
+  test (n=242)  vis  5m  qc 9.847 MPa  fs 90.829 kPa
+  test (n=242)  vis 10m  qc 9.985 MPa  fs 76.085 kPa
+  test (n=242)  vis 15m  qc 9.530 MPa  fs 62.405 kPa
+  test (n=242)  vis 20m  qc 8.521 MPa  fs 66.072 kPa
+epoch 201/300  train 2.1365  val 1.5787  pval 2.4054  mr 0.75  pf 0.52  lr 2.69e-04  gn 2.376  t 59s  mps 196MB
+epoch 202/300  train 2.1458  val 1.6721  pval 2.3908  mr 0.75  pf 0.52  lr 2.64e-04  gn 3.395  t 59s  mps 303MB
+epoch 203/300  train 2.1138  val 1.6193  pval 2.3505  mr 0.75  pf 0.53  lr 2.60e-04  gn 2.964  t 67s  mps 326MB
+epoch 204/300  train 2.1112  val 1.5914  pval 2.3506  mr 0.75  pf 0.53  lr 2.55e-04  gn 3.208  t 81s  mps 300MB
+epoch 205/300  train 2.1334  val 1.6345  pval 2.3796  mr 0.75  pf 0.53  lr 2.50e-04  gn 2.282  t 260s  mps 289MB
+epoch 206/300  train 2.1058  val 1.6485  pval 2.3369  mr 0.75  pf 0.54  lr 2.46e-04  gn 2.855  t 79s  mps 258MB
+epoch 207/300  train 2.2065  val 1.6292  pval 2.3466  mr 0.75  pf 0.54  lr 2.41e-04  gn 2.819  t 58s  mps 256MB
+epoch 208/300  train 2.1184  val 1.6135  pval 2.3623  mr 0.75  pf 0.55  lr 2.37e-04  gn 2.523  t 58s  mps 192MB
+epoch 209/300  train 2.2568  val 1.6324  pval 2.3516  mr 0.75  pf 0.55  lr 2.32e-04  gn 3.074  t 57s  mps 297MB
+epoch 210/300  train 2.1542  val 1.5927  pval 2.3570  mr 0.75  pf 0.55  lr 2.28e-04  gn 3.824  t 252s  mps 325MB
+epoch 211/300  train 2.2610  val 1.6755  pval 2.4034  mr 0.75  pf 0.56  lr 2.23e-04  gn 4.850  t 63s  mps 314MB
+epoch 212/300  train 2.1025  val 1.6510  pval 2.3445  mr 0.75  pf 0.56  lr 2.19e-04  gn 6.084  t 67s  mps 326MB
+epoch 213/300  train 2.0961  val 1.5867  pval 2.3599  mr 0.75  pf 0.56  lr 2.15e-04  gn 4.407  t 82s  mps 293MB
+epoch 214/300  train 2.2193  val 1.6438  pval 2.3614  mr 0.75  pf 0.57  lr 2.10e-04  gn 3.845  t 309s  mps 227MB
+epoch 215/300  train 2.1410  val 1.5888  pval 2.3085  mr 0.75  pf 0.57  lr 2.06e-04  gn 2.948  t 56s  mps 331MB
+epoch 216/300  train 2.1429  val 1.6298  pval 2.3391  mr 0.75  pf 0.58  lr 2.02e-04  gn 2.755  t 97s  mps 303MB
+epoch 217/300  train 2.1486  val 1.5947  pval 2.3460  mr 0.75  pf 0.58  lr 1.97e-04  gn 2.279  t 60s  mps 273MB
+epoch 218/300  train 2.2013  val 1.6205  pval 2.3493  mr 0.75  pf 0.58  lr 1.93e-04  gn 2.571  t 59s  mps 326MB
+epoch 219/300  train 1.9683  val 1.5770  pval 2.3206  mr 0.75  pf 0.59  lr 1.89e-04  gn 3.241  t 160s  mps 300MB
+epoch 220/300  train 2.2255  val 1.5877  pval 2.3148  mr 0.75  pf 0.59  lr 1.85e-04  gn 2.812  t 139s  mps 306MB

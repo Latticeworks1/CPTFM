@@ -1,0 +1,29 @@
+/Users/m1a4xnetworkprobe./Documents/CPTFM/cptfm/model.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(encoder_layer, num_layers=encoder_depth)
+device: mps
+Loaded Slepian features (148 dims); total embedding dim: 404
+train: 3395  val: 424  test (held-out): 424
+qc [0.400, 42.237] MPa   fs [3.400, 1423.500] kPa
+tokenizer loaded  val_recon 0.0008  K=128  d_vq=32  depth_cond=True
+params: 8.40M
+decorrelation term enabled (lambda=1e-05): satclip[0:256], global_sh[256:356], cap1[356:375], cap2[375:404]
+epoch   1/5  train 8.8393  val 5.8269  decorr(raw) 3553.5  mr 0.50  pf 0.00  lr 9.29e-05  gn 35.654  t 118s  mps 161MB
+epoch   2/5  train 5.5140  val 4.7590  decorr(raw) 2764.5  mr 0.50  pf 0.00  lr 1.93e-04  gn 16.330  t 119s  mps 161MB
+/Users/m1a4xnetworkprobe./Documents/CPTFM/cptfm/model.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(encoder_layer, num_layers=encoder_depth)
+device: mps
+Loaded Slepian features (148 dims); total embedding dim: 404
+train: 3395  val: 424  test (held-out): 424
+qc [0.400, 42.237] MPa   fs [3.400, 1423.500] kPa
+tokenizer loaded  val_recon 0.0008  K=128  d_vq=32  depth_cond=True
+params: 8.40M
+decorrelation term enabled (lambda=1e-05): satclip[0:256], global_sh[256:356], cap1[356:375], cap2[375:404]
+resumed from last.pt epoch 2  best_val 4.7590
+epoch   3/5  train 5.2973  val 4.7896  pval 4.5721  decorr(raw) 1754.3  mr 0.59  pf 0.19  lr 2.93e-04  gn 16.392  t 117s  mps 171MB
+epoch   4/5  train 5.0720  val 4.6921  pval 4.5400  decorr(raw) 1433.8  mr 0.72  pf 0.44  lr 3.93e-04  gn 19.471  t 260s  mps 134MB
+epoch   5/5  train 5.5841  val 6.2303  pval 5.8165  decorr(raw) 1224.8  mr 0.75  pf 0.67  lr 4.93e-04  gn 25.849  t 575s  mps 167MB
+  test (n=424)  vis  0m  qc 11.813 MPa  fs 619.304 kPa
+  test (n=424)  vis  5m  qc 11.506 MPa  fs 357.129 kPa
+  test (n=424)  vis 10m  qc 11.846 MPa  fs 312.414 kPa
+  test (n=424)  vis 15m  qc 11.819 MPa  fs 280.182 kPa
+  test (n=424)  vis 20m  qc 11.186 MPa  fs 261.130 kPa

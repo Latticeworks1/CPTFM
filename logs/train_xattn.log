@@ -1,0 +1,368 @@
+device: mps
+train: 1457  val: 181  test (held-out): 181
+qc [0.251, 41.900] MPa   fs [1.700, 814.999] kPa
+tokenizer loaded  val_recon 0.0010  K=64  d_vq=32
+/Users/m1a4xnetworkprobe./Documents/CPTFM/model.py:36: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(encoder_layer, num_layers=encoder_depth)
+params: 8.24M
+warm encoder from epoch 215  missing=18  unexpected=4
+epoch   1/300  train 96.3497  val 25.3316  mr 0.50  pf 0.00  lr 8.33e-05
+epoch   2/300  train 15.0831  val 10.3736  mr 0.50  pf 0.00  lr 1.83e-04
+epoch   3/300  train 4.9966  val 1.7925  mr 0.50  pf 0.00  lr 2.83e-04
+epoch   4/300  train 1.0149  val 0.3581  mr 0.50  pf 0.00  lr 3.83e-04
+epoch   5/300  train 0.2377  val 0.1478  mr 0.50  pf 0.00  lr 4.83e-04
+epoch   6/300  train 0.1203  val 0.0894  mr 0.50  pf 0.00  lr 5.83e-04
+epoch   7/300  train 0.0801  val 0.0667  mr 0.50  pf 0.00  lr 6.83e-04
+epoch   8/300  train 0.0666  val 0.0589  mr 0.50  pf 0.00  lr 7.83e-04
+epoch   9/300  train 0.0540  val 0.0472  mr 0.50  pf 0.00  lr 8.83e-04
+epoch  10/300  train 0.0435  val 0.0386  mr 0.50  pf 0.00  lr 9.83e-04
+epoch  11/300  train 0.0368  val 0.0365  mr 0.50  pf 0.00  lr 1.00e-03
+epoch  12/300  train 0.0326  val 0.0326  mr 0.50  pf 0.00  lr 1.00e-03
+epoch  13/300  train 0.0312  val 0.0311  mr 0.50  pf 0.00  lr 1.00e-03
+epoch  14/300  train 0.0298  val 0.0311  mr 0.50  pf 0.00  lr 1.00e-03
+epoch  15/300  train 0.0295  val 0.0302  mr 0.50  pf 0.00  lr 9.99e-04
+epoch  16/300  train 0.0278  val 0.0293  mr 0.50  pf 0.00  lr 9.99e-04
+epoch  17/300  train 0.0277  val 0.0284  mr 0.50  pf 0.00  lr 9.99e-04
+epoch  18/300  train 0.0267  val 0.0284  mr 0.50  pf 0.00  lr 9.98e-04
+epoch  19/300  train 0.0269  val 0.0281  mr 0.50  pf 0.00  lr 9.98e-04
+epoch  20/300  train 0.0262  val 0.0267  mr 0.50  pf 0.00  lr 9.97e-04
+epoch  21/300  train 0.0261  val 0.0270  mr 0.50  pf 0.00  lr 9.97e-04
+epoch  22/300  train 0.0258  val 0.0256  mr 0.50  pf 0.00  lr 9.96e-04
+epoch  23/300  train 0.0261  val 0.0265  mr 0.50  pf 0.00  lr 9.95e-04
+epoch  24/300  train 0.0261  val 0.0263  mr 0.50  pf 0.00  lr 9.94e-04
+epoch  25/300  train 0.0256  val 0.0257  mr 0.50  pf 0.00  lr 9.94e-04
+  test (n=181)  vis  0m  qc 66.767 MPa  fs 1023.401 kPa
+  test (n=181)  vis  5m  qc 9.449 MPa  fs 150.196 kPa
+  test (n=181)  vis 10m  qc 9.299 MPa  fs 154.665 kPa
+  test (n=181)  vis 15m  qc 9.321 MPa  fs 163.600 kPa
+  test (n=181)  vis 20m  qc 10.721 MPa  fs 198.886 kPa
+epoch  26/300  train 0.0248  val 0.0257  mr 0.50  pf 0.00  lr 9.93e-04
+epoch  27/300  train 0.0250  val 0.0254  mr 0.50  pf 0.00  lr 9.92e-04
+epoch  28/300  train 0.0249  val 0.0263  mr 0.50  pf 0.00  lr 9.91e-04
+epoch  29/300  train 0.0240  val 0.0253  mr 0.50  pf 0.00  lr 9.90e-04
+epoch  30/300  train 0.0262  val 0.0246  mr 0.50  pf 0.00  lr 9.89e-04
+epoch  31/300  train 0.0249  val 0.0269  mr 0.50  pf 0.00  lr 9.87e-04
+epoch  32/300  train 0.0255  val 0.0256  mr 0.50  pf 0.00  lr 9.86e-04
+epoch  33/300  train 0.0248  val 0.0267  mr 0.50  pf 0.00  lr 9.85e-04
+epoch  34/300  train 0.0248  val 0.0256  mr 0.50  pf 0.00  lr 9.84e-04
+epoch  35/300  train 0.0253  val 0.0234  mr 0.50  pf 0.00  lr 9.82e-04
+epoch  36/300  train 0.0242  val 0.0237  mr 0.50  pf 0.00  lr 9.81e-04
+epoch  37/300  train 0.0240  val 0.0240  mr 0.50  pf 0.00  lr 9.79e-04
+epoch  38/300  train 0.0241  val 0.0251  mr 0.50  pf 0.00  lr 9.78e-04
+epoch  39/300  train 0.0233  val 0.0242  mr 0.50  pf 0.00  lr 9.76e-04
+epoch  40/300  train 0.0232  val 0.0255  mr 0.50  pf 0.00  lr 9.74e-04
+epoch  41/300  train 0.0230  val 0.0232  mr 0.50  pf 0.00  lr 9.73e-04
+epoch  42/300  train 0.0235  val 0.0242  mr 0.50  pf 0.00  lr 9.71e-04
+epoch  43/300  train 0.0238  val 0.0228  mr 0.50  pf 0.00  lr 9.69e-04
+epoch  44/300  train 0.0238  val 0.0231  mr 0.50  pf 0.00  lr 9.67e-04
+epoch  45/300  train 0.0232  val 0.0231  mr 0.50  pf 0.00  lr 9.65e-04
+epoch  46/300  train 0.0228  val 0.0234  mr 0.50  pf 0.00  lr 9.63e-04
+epoch  47/300  train 0.0236  val 0.0244  mr 0.50  pf 0.00  lr 9.61e-04
+epoch  48/300  train 0.0237  val 0.0234  mr 0.50  pf 0.00  lr 9.59e-04
+epoch  49/300  train 0.0241  val 0.0242  mr 0.50  pf 0.00  lr 9.57e-04
+epoch  50/300  train 0.0234  val 0.0240  mr 0.50  pf 0.00  lr 9.55e-04
+  test (n=181)  vis  0m  qc 50.798 MPa  fs 694.599 kPa
+  test (n=181)  vis  5m  qc 9.193 MPa  fs 148.582 kPa
+  test (n=181)  vis 10m  qc 9.331 MPa  fs 155.067 kPa
+  test (n=181)  vis 15m  qc 9.292 MPa  fs 164.916 kPa
+  test (n=181)  vis 20m  qc 9.478 MPa  fs 186.036 kPa
+epoch  51/300  train 0.0231  val 0.0230  mr 0.50  pf 0.00  lr 9.52e-04
+epoch  52/300  train 0.0232  val 0.0234  mr 0.50  pf 0.00  lr 9.50e-04
+epoch  53/300  train 0.0235  val 0.0246  mr 0.50  pf 0.00  lr 9.48e-04
+epoch  54/300  train 0.0228  val 0.0257  mr 0.50  pf 0.00  lr 9.45e-04
+epoch  55/300  train 0.0229  val 0.0230  mr 0.50  pf 0.00  lr 9.43e-04
+epoch  56/300  train 0.0223  val 0.0227  mr 0.50  pf 0.00  lr 9.40e-04
+epoch  57/300  train 0.0227  val 0.0229  mr 0.50  pf 0.00  lr 9.38e-04
+epoch  58/300  train 0.0226  val 0.0226  mr 0.50  pf 0.00  lr 9.35e-04
+epoch  59/300  train 0.0233  val 0.0242  mr 0.50  pf 0.00  lr 9.32e-04
+epoch  60/300  train 0.0228  val 0.0237  mr 0.50  pf 0.00  lr 9.30e-04
+epoch  61/300  train 0.0226  val 0.0239  mr 0.50  pf 0.00  lr 9.27e-04
+epoch  62/300  train 0.0223  val 0.0228  mr 0.50  pf 0.00  lr 9.24e-04
+epoch  63/300  train 0.0224  val 0.0226  mr 0.50  pf 0.00  lr 9.21e-04
+epoch  64/300  train 0.0220  val 0.0225  mr 0.50  pf 0.00  lr 9.18e-04
+epoch  65/300  train 0.0217  val 0.0230  mr 0.50  pf 0.00  lr 9.15e-04
+epoch  66/300  train 0.0225  val 0.0229  mr 0.50  pf 0.00  lr 9.12e-04
+epoch  67/300  train 0.0222  val 0.0235  mr 0.50  pf 0.00  lr 9.09e-04
+epoch  68/300  train 0.0216  val 0.0231  mr 0.50  pf 0.00  lr 9.06e-04
+epoch  69/300  train 0.0219  val 0.0222  mr 0.50  pf 0.00  lr 9.03e-04
+epoch  70/300  train 0.0212  val 0.0221  mr 0.50  pf 0.00  lr 9.00e-04
+epoch  71/300  train 0.0214  val 0.0207  mr 0.50  pf 0.00  lr 8.96e-04
+epoch  72/300  train 0.0213  val 0.0229  mr 0.50  pf 0.00  lr 8.93e-04
+epoch  73/300  train 0.0212  val 0.0214  mr 0.50  pf 0.00  lr 8.90e-04
+epoch  74/300  train 0.0213  val 0.0226  mr 0.50  pf 0.00  lr 8.86e-04
+epoch  75/300  train 0.0216  val 0.0219  mr 0.50  pf 0.00  lr 8.83e-04
+  test (n=181)  vis  0m  qc 47.142 MPa  fs 669.060 kPa
+  test (n=181)  vis  5m  qc 9.544 MPa  fs 148.550 kPa
+  test (n=181)  vis 10m  qc 9.182 MPa  fs 153.382 kPa
+  test (n=181)  vis 15m  qc 9.157 MPa  fs 162.603 kPa
+  test (n=181)  vis 20m  qc 9.561 MPa  fs 186.233 kPa
+epoch  76/300  train 0.0216  val 0.0213  mr 0.50  pf 0.00  lr 8.79e-04
+epoch  77/300  train 0.0214  val 0.0222  mr 0.50  pf 0.00  lr 8.76e-04
+epoch  78/300  train 0.0209  val 0.0229  mr 0.50  pf 0.01  lr 8.72e-04
+epoch  79/300  train 0.0213  val 0.0228  mr 0.51  pf 0.01  lr 8.69e-04
+epoch  80/300  train 0.0209  val 0.0222  mr 0.51  pf 0.02  lr 8.65e-04
+epoch  81/300  train 0.0212  val 0.0234  mr 0.51  pf 0.02  lr 8.61e-04
+epoch  82/300  train 0.0211  val 0.0226  mr 0.51  pf 0.03  lr 8.58e-04
+epoch  83/300  train 0.0226  val 0.0227  mr 0.51  pf 0.03  lr 8.54e-04
+epoch  84/300  train 0.0215  val 0.0225  mr 0.52  pf 0.03  lr 8.50e-04
+epoch  85/300  train 0.0241  val 0.0240  mr 0.52  pf 0.04  lr 8.46e-04
+epoch  86/300  train 0.0229  val 0.0233  mr 0.52  pf 0.04  lr 8.42e-04
+epoch  87/300  train 0.0225  val 0.0231  mr 0.52  pf 0.05  lr 8.38e-04
+epoch  88/300  train 0.0238  val 0.0239  mr 0.53  pf 0.05  lr 8.34e-04
+epoch  89/300  train 0.0247  val 0.0244  mr 0.53  pf 0.05  lr 8.30e-04
+epoch  90/300  train 0.0277  val 0.0258  mr 0.53  pf 0.06  lr 8.26e-04
+epoch  91/300  train 0.0253  val 0.0252  mr 0.53  pf 0.06  lr 8.22e-04
+epoch  92/300  train 0.0236  val 0.0230  mr 0.53  pf 0.07  lr 8.18e-04
+epoch  93/300  train 0.0243  val 0.0234  mr 0.54  pf 0.07  lr 8.14e-04
+epoch  94/300  train 0.0241  val 0.0221  mr 0.54  pf 0.07  lr 8.10e-04
+epoch  95/300  train 0.0245  val 0.0229  mr 0.54  pf 0.08  lr 8.05e-04
+epoch  96/300  train 0.0216  val 0.0224  mr 0.54  pf 0.08  lr 8.01e-04
+epoch  97/300  train 0.0244  val 0.0225  mr 0.54  pf 0.09  lr 7.97e-04
+epoch  98/300  train 0.0236  val 0.0224  mr 0.55  pf 0.09  lr 7.92e-04
+epoch  99/300  train 0.0285  val 0.0241  mr 0.55  pf 0.10  lr 7.88e-04
+epoch 100/300  train 0.0241  val 0.0230  mr 0.55  pf 0.10  lr 7.84e-04
+  test (n=181)  vis  0m  qc 36.461 MPa  fs 536.151 kPa
+  test (n=181)  vis  5m  qc 8.860 MPa  fs 145.629 kPa
+  test (n=181)  vis 10m  qc 9.112 MPa  fs 149.844 kPa
+  test (n=181)  vis 15m  qc 9.473 MPa  fs 159.308 kPa
+  test (n=181)  vis 20m  qc 9.834 MPa  fs 181.982 kPa
+epoch 101/300  train 0.0231  val 0.0213  mr 0.55  pf 0.10  lr 7.79e-04
+epoch 102/300  train 0.0254  val 0.0223  mr 0.55  pf 0.11  lr 7.75e-04
+epoch 103/300  train 0.0215  val 0.0231  mr 0.56  pf 0.11  lr 7.70e-04
+epoch 104/300  train 0.0245  val 0.0233  mr 0.56  pf 0.12  lr 7.66e-04
+epoch 105/300  train 0.0237  val 0.0213  mr 0.56  pf 0.12  lr 7.61e-04
+epoch 106/300  train 0.0262  val 0.0250  mr 0.56  pf 0.12  lr 7.56e-04
+epoch 107/300  train 0.0252  val 0.0231  mr 0.56  pf 0.13  lr 7.52e-04
+epoch 108/300  train 0.0228  val 0.0232  mr 0.57  pf 0.13  lr 7.47e-04
+epoch 109/300  train 0.0275  val 0.0263  mr 0.57  pf 0.14  lr 7.42e-04
+epoch 110/300  train 0.0290  val 0.0257  mr 0.57  pf 0.14  lr 7.38e-04
+epoch 111/300  train 0.0266  val 0.0251  mr 0.57  pf 0.15  lr 7.33e-04
+epoch 112/300  train 0.0267  val 0.0241  mr 0.57  pf 0.15  lr 7.28e-04
+epoch 113/300  train 0.0252  val 0.0229  mr 0.58  pf 0.15  lr 7.23e-04
+epoch 114/300  train 0.0250  val 0.0227  mr 0.58  pf 0.16  lr 7.19e-04
+epoch 115/300  train 0.0258  val 0.0230  mr 0.58  pf 0.16  lr 7.14e-04
+epoch 116/300  train 0.0253  val 0.0228  mr 0.58  pf 0.17  lr 7.09e-04
+epoch 117/300  train 0.0255  val 0.0240  mr 0.59  pf 0.17  lr 7.04e-04
+epoch 118/300  train 0.0236  val 0.0219  mr 0.59  pf 0.18  lr 6.99e-04
+epoch 119/300  train 0.0246  val 0.0232  mr 0.59  pf 0.18  lr 6.94e-04
+epoch 120/300  train 0.0229  val 0.0211  mr 0.59  pf 0.18  lr 6.89e-04
+epoch 121/300  train 0.0259  val 0.0223  mr 0.59  pf 0.19  lr 6.84e-04
+epoch 122/300  train 0.0247  val 0.0227  mr 0.60  pf 0.19  lr 6.79e-04
+epoch 123/300  train 0.0220  val 0.0224  mr 0.60  pf 0.20  lr 6.74e-04
+epoch 124/300  train 0.0224  val 0.0244  mr 0.60  pf 0.20  lr 6.69e-04
+epoch 125/300  train 0.0259  val 0.0232  mr 0.60  pf 0.20  lr 6.64e-04
+  test (n=181)  vis  0m  qc 22.978 MPa  fs 350.938 kPa
+  test (n=181)  vis  5m  qc 8.849 MPa  fs 146.905 kPa
+  test (n=181)  vis 10m  qc 8.748 MPa  fs 149.654 kPa
+  test (n=181)  vis 15m  qc 8.705 MPa  fs 156.589 kPa
+  test (n=181)  vis 20m  qc 7.911 MPa  fs 173.683 kPa
+epoch 126/300  train 0.0241  val 0.0218  mr 0.60  pf 0.21  lr 6.59e-04
+epoch 127/300  train 0.0247  val 0.0216  mr 0.61  pf 0.21  lr 6.54e-04
+epoch 128/300  train 0.0223  val 0.0211  mr 0.61  pf 0.22  lr 6.49e-04
+epoch 129/300  train 0.0215  val 0.0208  mr 0.61  pf 0.22  lr 6.43e-04
+epoch 130/300  train 0.0221  val 0.0213  mr 0.61  pf 0.22  lr 6.38e-04
+epoch 131/300  train 0.0237  val 0.0215  mr 0.61  pf 0.23  lr 6.33e-04
+epoch 132/300  train 0.0275  val 0.0232  mr 0.62  pf 0.23  lr 6.28e-04
+epoch 133/300  train 0.0247  val 0.0216  mr 0.62  pf 0.24  lr 6.23e-04
+epoch 134/300  train 0.0237  val 0.0212  mr 0.62  pf 0.24  lr 6.18e-04
+epoch 135/300  train 0.0252  val 0.0222  mr 0.62  pf 0.25  lr 6.12e-04
+epoch 136/300  train 0.0243  val 0.0215  mr 0.62  pf 0.25  lr 6.07e-04
+epoch 137/300  train 0.0248  val 0.0213  mr 0.63  pf 0.25  lr 6.02e-04
+epoch 138/300  train 0.0223  val 0.0210  mr 0.63  pf 0.26  lr 5.97e-04
+epoch 139/300  train 0.0229  val 0.0199  mr 0.63  pf 0.26  lr 5.91e-04
+epoch 140/300  train 0.0249  val 0.0209  mr 0.63  pf 0.27  lr 5.86e-04
+epoch 141/300  train 0.0242  val 0.0214  mr 0.64  pf 0.27  lr 5.81e-04
+epoch 142/300  train 0.0319  val 0.0290  mr 0.64  pf 0.27  lr 5.75e-04
+epoch 143/300  train 0.0320  val 0.0270  mr 0.64  pf 0.28  lr 5.70e-04
+epoch 144/300  train 0.0303  val 0.0259  mr 0.64  pf 0.28  lr 5.65e-04
+epoch 145/300  train 0.0284  val 0.0252  mr 0.64  pf 0.29  lr 5.59e-04
+epoch 146/300  train 0.0310  val 0.0249  mr 0.65  pf 0.29  lr 5.54e-04
+epoch 147/300  train 0.0245  val 0.0217  mr 0.65  pf 0.30  lr 5.49e-04
+epoch 148/300  train 0.0277  val 0.0223  mr 0.65  pf 0.30  lr 5.43e-04
+epoch 149/300  train 0.0251  val 0.0215  mr 0.65  pf 0.30  lr 5.38e-04
+epoch 150/300  train 0.0313  val 0.0231  mr 0.65  pf 0.31  lr 5.33e-04
+  test (n=181)  vis  0m  qc 28.092 MPa  fs 289.455 kPa
+  test (n=181)  vis  5m  qc 8.906 MPa  fs 143.540 kPa
+  test (n=181)  vis 10m  qc 9.093 MPa  fs 149.270 kPa
+  test (n=181)  vis 15m  qc 9.349 MPa  fs 159.421 kPa
+  test (n=181)  vis 20m  qc 10.610 MPa  fs 199.320 kPa
+epoch 151/300  train 0.1032  val 0.0281  mr 0.66  pf 0.31  lr 5.27e-04
+epoch 152/300  train 0.0298  val 0.0283  mr 0.66  pf 0.32  lr 5.22e-04
+epoch 153/300  train 0.0378  val 0.0326  mr 0.66  pf 0.32  lr 5.17e-04
+epoch 154/300  train 0.0347  val 0.0296  mr 0.66  pf 0.33  lr 5.11e-04
+epoch 155/300  train 0.0364  val 0.0276  mr 0.66  pf 0.33  lr 5.06e-04
+epoch 156/300  train 0.0321  val 0.0286  mr 0.67  pf 0.33  lr 5.01e-04
+epoch 157/300  train 0.0323  val 0.0272  mr 0.67  pf 0.34  lr 4.95e-04
+epoch 158/300  train 0.0301  val 0.0251  mr 0.67  pf 0.34  lr 4.90e-04
+epoch 159/300  train 0.0284  val 0.0241  mr 0.67  pf 0.35  lr 4.84e-04
+epoch 160/300  train 0.0269  val 0.0226  mr 0.68  pf 0.35  lr 4.79e-04
+epoch 161/300  train 0.0246  val 0.0228  mr 0.68  pf 0.35  lr 4.74e-04
+epoch 162/300  train 0.0265  val 0.0227  mr 0.68  pf 0.36  lr 4.68e-04
+epoch 163/300  train 0.0246  val 0.0215  mr 0.68  pf 0.36  lr 4.63e-04
+epoch 164/300  train 0.0253  val 0.0217  mr 0.68  pf 0.37  lr 4.58e-04
+epoch 165/300  train 0.0256  val 0.0209  mr 0.69  pf 0.37  lr 4.52e-04
+epoch 166/300  train 0.0281  val 0.0219  mr 0.69  pf 0.38  lr 4.47e-04
+epoch 167/300  train 0.0259  val 0.0212  mr 0.69  pf 0.38  lr 4.42e-04
+epoch 168/300  train 0.0252  val 0.0216  mr 0.69  pf 0.38  lr 4.36e-04
+epoch 169/300  train 0.0259  val 0.0213  mr 0.69  pf 0.39  lr 4.31e-04
+epoch 170/300  train 0.0251  val 0.0219  mr 0.70  pf 0.39  lr 4.26e-04
+epoch 171/300  train 0.0270  val 0.0207  mr 0.70  pf 0.40  lr 4.21e-04
+epoch 172/300  train 0.0242  val 0.0210  mr 0.70  pf 0.40  lr 4.15e-04
+epoch 173/300  train 0.0226  val 0.0208  mr 0.70  pf 0.40  lr 4.10e-04
+epoch 174/300  train 0.0263  val 0.0206  mr 0.70  pf 0.41  lr 4.05e-04
+epoch 175/300  train 0.0251  val 0.0210  mr 0.71  pf 0.41  lr 3.99e-04
+  test (n=181)  vis  0m  qc 80.768 MPa  fs 1697.449 kPa
+  test (n=181)  vis  5m  qc 8.846 MPa  fs 143.360 kPa
+  test (n=181)  vis 10m  qc 8.910 MPa  fs 150.966 kPa
+  test (n=181)  vis 15m  qc 8.772 MPa  fs 158.449 kPa
+  test (n=181)  vis 20m  qc 8.137 MPa  fs 179.646 kPa
+epoch 176/300  train 0.0241  val 0.0209  mr 0.71  pf 0.42  lr 3.94e-04
+epoch 177/300  train 0.0246  val 0.0207  mr 0.71  pf 0.42  lr 3.89e-04
+epoch 178/300  train 0.0283  val 0.0205  mr 0.71  pf 0.42  lr 3.84e-04
+epoch 179/300  train 0.0254  val 0.0224  mr 0.71  pf 0.43  lr 3.79e-04
+epoch 180/300  train 0.0265  val 0.0210  mr 0.72  pf 0.43  lr 3.73e-04
+epoch 181/300  train 0.0217  val 0.0219  mr 0.72  pf 0.44  lr 3.68e-04
+epoch 182/300  train 0.0246  val 0.0202  mr 0.72  pf 0.44  lr 3.63e-04
+epoch 183/300  train 0.0291  val 0.0216  mr 0.72  pf 0.45  lr 3.58e-04
+epoch 184/300  train 0.0313  val 0.0231  mr 0.72  pf 0.45  lr 3.53e-04
+epoch 185/300  train 0.0282  val 0.0232  mr 0.73  pf 0.45  lr 3.48e-04
+epoch 186/300  train 0.0280  val 0.0235  mr 0.73  pf 0.46  lr 3.43e-04
+epoch 187/300  train 0.0306  val 0.0234  mr 0.73  pf 0.46  lr 3.38e-04
+epoch 188/300  train 0.0258  val 0.0220  mr 0.73  pf 0.47  lr 3.33e-04
+epoch 189/300  train 0.0276  val 0.0216  mr 0.74  pf 0.47  lr 3.28e-04
+epoch 190/300  train 0.0280  val 0.0224  mr 0.74  pf 0.47  lr 3.23e-04
+epoch 191/300  train 0.0264  val 0.0208  mr 0.74  pf 0.48  lr 3.18e-04
+epoch 192/300  train 0.0259  val 0.0208  mr 0.74  pf 0.48  lr 3.13e-04
+epoch 193/300  train 0.0224  val 0.0205  mr 0.74  pf 0.49  lr 3.08e-04
+epoch 194/300  train 0.0249  val 0.0215  mr 0.75  pf 0.49  lr 3.03e-04
+epoch 195/300  train 0.0253  val 0.0205  mr 0.75  pf 0.50  lr 2.98e-04
+epoch 196/300  train 1.3283  val 0.0206  mr 0.75  pf 0.50  lr 2.93e-04
+epoch 197/300  train 0.0255  val 0.0228  mr 0.75  pf 0.50  lr 2.88e-04
+epoch 198/300  train 0.0234  val 0.0214  mr 0.75  pf 0.50  lr 2.83e-04
+epoch 199/300  train 0.0268  val 0.0199  mr 0.75  pf 0.50  lr 2.79e-04
+epoch 200/300  train 0.0283  val 0.0215  mr 0.75  pf 0.50  lr 2.74e-04
+  test (n=181)  vis  0m  qc 45.473 MPa  fs 500.863 kPa
+  test (n=181)  vis  5m  qc 8.686 MPa  fs 143.583 kPa
+  test (n=181)  vis 10m  qc 8.970 MPa  fs 148.018 kPa
+  test (n=181)  vis 15m  qc 9.038 MPa  fs 158.146 kPa
+  test (n=181)  vis 20m  qc 9.278 MPa  fs 183.326 kPa
+epoch 201/300  train 0.0261  val 0.0201  mr 0.75  pf 0.50  lr 2.69e-04
+epoch 202/300  train 0.0262  val 0.0210  mr 0.75  pf 0.50  lr 2.64e-04
+epoch 203/300  train 0.0267  val 0.0213  mr 0.75  pf 0.50  lr 2.60e-04
+epoch 204/300  train 0.0253  val 0.0217  mr 0.75  pf 0.50  lr 2.55e-04
+epoch 205/300  train 0.0245  val 0.0204  mr 0.75  pf 0.50  lr 2.51e-04
+epoch 206/300  train 0.0237  val 0.0205  mr 0.75  pf 0.50  lr 2.46e-04
+epoch 207/300  train 0.0228  val 0.0216  mr 0.75  pf 0.50  lr 2.41e-04
+epoch 208/300  train 0.0243  val 0.0203  mr 0.75  pf 0.50  lr 2.37e-04
+epoch 209/300  train 0.0251  val 0.0187  mr 0.75  pf 0.50  lr 2.32e-04
+epoch 210/300  train 0.0253  val 0.0201  mr 0.75  pf 0.50  lr 2.28e-04
+epoch 211/300  train 0.0252  val 0.0209  mr 0.75  pf 0.50  lr 2.24e-04
+epoch 212/300  train 0.0282  val 0.0195  mr 0.75  pf 0.50  lr 2.19e-04
+epoch 213/300  train 0.0244  val 0.0204  mr 0.75  pf 0.50  lr 2.15e-04
+epoch 214/300  train 0.0267  val 0.0207  mr 0.75  pf 0.50  lr 2.10e-04
+epoch 215/300  train 0.0253  val 0.0212  mr 0.75  pf 0.50  lr 2.06e-04
+epoch 216/300  train 0.0230  val 0.0209  mr 0.75  pf 0.50  lr 2.02e-04
+epoch 217/300  train 0.0230  val 0.0208  mr 0.75  pf 0.50  lr 1.98e-04
+epoch 218/300  train 0.0228  val 0.0198  mr 0.75  pf 0.50  lr 1.93e-04
+epoch 219/300  train 0.0236  val 0.0209  mr 0.75  pf 0.50  lr 1.89e-04
+epoch 220/300  train 0.0227  val 0.0198  mr 0.75  pf 0.50  lr 1.85e-04
+epoch 221/300  train 0.0231  val 0.0209  mr 0.75  pf 0.50  lr 1.81e-04
+epoch 222/300  train 0.0249  val 0.0199  mr 0.75  pf 0.50  lr 1.77e-04
+epoch 223/300  train 0.0242  val 0.0203  mr 0.75  pf 0.50  lr 1.73e-04
+epoch 224/300  train 0.0247  val 0.0204  mr 0.75  pf 0.50  lr 1.69e-04
+epoch 225/300  train 0.0244  val 0.0205  mr 0.75  pf 0.50  lr 1.65e-04
+  test (n=181)  vis  0m  qc 39.994 MPa  fs 477.077 kPa
+  test (n=181)  vis  5m  qc 8.752 MPa  fs 145.794 kPa
+  test (n=181)  vis 10m  qc 8.909 MPa  fs 149.566 kPa
+  test (n=181)  vis 15m  qc 8.873 MPa  fs 158.413 kPa
+  test (n=181)  vis 20m  qc 9.126 MPa  fs 182.071 kPa
+epoch 226/300  train 0.0241  val 0.0204  mr 0.75  pf 0.50  lr 1.61e-04
+epoch 227/300  train 0.0252  val 0.0196  mr 0.75  pf 0.50  lr 1.58e-04
+epoch 228/300  train 0.0235  val 0.0203  mr 0.75  pf 0.50  lr 1.54e-04
+epoch 229/300  train 0.0243  val 0.0211  mr 0.75  pf 0.50  lr 1.50e-04
+epoch 230/300  train 0.0237  val 0.0204  mr 0.75  pf 0.50  lr 1.46e-04
+epoch 231/300  train 0.0228  val 0.0213  mr 0.75  pf 0.50  lr 1.43e-04
+epoch 232/300  train 0.0243  val 0.0197  mr 0.75  pf 0.50  lr 1.39e-04
+epoch 233/300  train 0.0244  val 0.0194  mr 0.75  pf 0.50  lr 1.35e-04
+epoch 234/300  train 0.0228  val 0.0201  mr 0.75  pf 0.50  lr 1.32e-04
+epoch 235/300  train 0.0244  val 0.0207  mr 0.75  pf 0.50  lr 1.28e-04
+epoch 236/300  train 0.0237  val 0.0204  mr 0.75  pf 0.50  lr 1.25e-04
+epoch 237/300  train 0.0214  val 0.0207  mr 0.75  pf 0.50  lr 1.21e-04
+epoch 238/300  train 0.0247  val 0.0197  mr 0.75  pf 0.50  lr 1.18e-04
+epoch 239/300  train 0.0227  val 0.0199  mr 0.75  pf 0.50  lr 1.15e-04
+epoch 240/300  train 0.0232  val 0.0206  mr 0.75  pf 0.50  lr 1.11e-04
+epoch 241/300  train 0.0234  val 0.0213  mr 0.75  pf 0.50  lr 1.08e-04
+epoch 242/300  train 0.0225  val 0.0206  mr 0.75  pf 0.50  lr 1.05e-04
+epoch 243/300  train 0.0256  val 0.0212  mr 0.75  pf 0.50  lr 1.02e-04
+epoch 244/300  train 0.0248  val 0.0211  mr 0.75  pf 0.50  lr 9.88e-05
+epoch 245/300  train 1.0520  val 0.0202  mr 0.75  pf 0.50  lr 9.58e-05
+epoch 246/300  train 0.0214  val 0.0199  mr 0.75  pf 0.50  lr 9.28e-05
+epoch 247/300  train 0.0212  val 0.0200  mr 0.75  pf 0.50  lr 8.99e-05
+epoch 248/300  train 0.0230  val 0.0205  mr 0.75  pf 0.50  lr 8.70e-05
+epoch 249/300  train 0.0236  val 0.0202  mr 0.75  pf 0.50  lr 8.41e-05
+epoch 250/300  train 0.0247  val 0.0202  mr 0.75  pf 0.50  lr 8.13e-05
+  test (n=181)  vis  0m  qc 44.359 MPa  fs 306.627 kPa
+  test (n=181)  vis  5m  qc 8.769 MPa  fs 145.031 kPa
+  test (n=181)  vis 10m  qc 8.936 MPa  fs 149.780 kPa
+  test (n=181)  vis 15m  qc 8.934 MPa  fs 157.530 kPa
+  test (n=181)  vis 20m  qc 9.538 MPa  fs 188.877 kPa
+epoch 251/300  train 0.0224  val 0.0186  mr 0.75  pf 0.50  lr 7.86e-05
+epoch 252/300  train 0.0227  val 0.0209  mr 0.75  pf 0.50  lr 7.59e-05
+epoch 253/300  train 0.0222  val 0.0200  mr 0.75  pf 0.50  lr 7.32e-05
+epoch 254/300  train 0.0231  val 0.0196  mr 0.75  pf 0.50  lr 7.06e-05
+epoch 255/300  train 0.0218  val 0.0210  mr 0.75  pf 0.50  lr 6.81e-05
+epoch 256/300  train 0.0218  val 0.0211  mr 0.75  pf 0.50  lr 6.56e-05
+epoch 257/300  train 0.3751  val 0.0203  mr 0.75  pf 0.50  lr 6.31e-05
+epoch 258/300  train 0.0231  val 0.0204  mr 0.75  pf 0.50  lr 6.08e-05
+epoch 259/300  train 0.0234  val 0.0215  mr 0.75  pf 0.50  lr 5.84e-05
+epoch 260/300  train 0.0231  val 0.0205  mr 0.75  pf 0.50  lr 5.61e-05
+epoch 261/300  train 0.0237  val 0.0204  mr 0.75  pf 0.50  lr 5.39e-05
+epoch 262/300  train 0.0219  val 0.0198  mr 0.75  pf 0.50  lr 5.17e-05
+epoch 263/300  train 0.0224  val 0.0188  mr 0.75  pf 0.50  lr 4.96e-05
+epoch 264/300  train 0.0245  val 0.0204  mr 0.75  pf 0.50  lr 4.75e-05
+epoch 265/300  train 0.0241  val 0.0201  mr 0.75  pf 0.50  lr 4.55e-05
+epoch 266/300  train 0.0235  val 0.0200  mr 0.75  pf 0.50  lr 4.35e-05
+epoch 267/300  train 0.0220  val 0.0189  mr 0.75  pf 0.50  lr 4.16e-05
+epoch 268/300  train 0.0204  val 0.0199  mr 0.75  pf 0.50  lr 3.98e-05
+epoch 269/300  train 0.0249  val 0.0194  mr 0.75  pf 0.50  lr 3.79e-05
+epoch 270/300  train 0.0211  val 0.0196  mr 0.75  pf 0.50  lr 3.62e-05
+epoch 271/300  train 0.0231  val 0.0191  mr 0.75  pf 0.50  lr 3.45e-05
+epoch 272/300  train 0.0229  val 0.0189  mr 0.75  pf 0.50  lr 3.29e-05
+epoch 273/300  train 0.0225  val 0.0192  mr 0.75  pf 0.50  lr 3.13e-05
+epoch 274/300  train 0.0226  val 0.0212  mr 0.75  pf 0.50  lr 2.98e-05
+epoch 275/300  train 0.0220  val 0.0198  mr 0.75  pf 0.50  lr 2.83e-05
+  test (n=181)  vis  0m  qc 11.394 MPa  fs 196.421 kPa
+  test (n=181)  vis  5m  qc 8.766 MPa  fs 144.856 kPa
+  test (n=181)  vis 10m  qc 8.944 MPa  fs 149.795 kPa
+  test (n=181)  vis 15m  qc 9.054 MPa  fs 159.039 kPa
+  test (n=181)  vis 20m  qc 9.963 MPa  fs 190.637 kPa
+epoch 276/300  train 0.0218  val 0.0189  mr 0.75  pf 0.50  lr 2.69e-05
+epoch 277/300  train 0.0203  val 0.0183  mr 0.75  pf 0.50  lr 2.55e-05
+epoch 278/300  train 0.0222  val 0.0198  mr 0.75  pf 0.50  lr 2.42e-05
+epoch 279/300  train 0.0214  val 0.0195  mr 0.75  pf 0.50  lr 2.30e-05
+epoch 280/300  train 0.0227  val 0.0200  mr 0.75  pf 0.50  lr 2.18e-05
+epoch 281/300  train 0.0195  val 0.0194  mr 0.75  pf 0.50  lr 2.06e-05
+epoch 282/300  train 0.0225  val 0.0200  mr 0.75  pf 0.50  lr 1.96e-05
+epoch 283/300  train 0.0207  val 0.0196  mr 0.75  pf 0.50  lr 1.85e-05
+epoch 284/300  train 0.0218  val 0.0196  mr 0.75  pf 0.50  lr 1.76e-05
+epoch 285/300  train 0.0232  val 0.0200  mr 0.75  pf 0.50  lr 1.67e-05
+epoch 286/300  train 0.0218  val 0.0201  mr 0.75  pf 0.50  lr 1.58e-05
+epoch 287/300  train 0.0216  val 0.0200  mr 0.75  pf 0.50  lr 1.50e-05
+epoch 288/300  train 0.0224  val 0.0201  mr 0.75  pf 0.50  lr 1.43e-05
+epoch 289/300  train 0.0239  val 0.0195  mr 0.75  pf 0.50  lr 1.36e-05
+epoch 290/300  train 0.0220  val 0.0212  mr 0.75  pf 0.50  lr 1.30e-05
+epoch 291/300  train 0.0222  val 0.0194  mr 0.75  pf 0.50  lr 1.24e-05
+epoch 292/300  train 0.0219  val 0.0203  mr 0.75  pf 0.50  lr 1.19e-05
+epoch 293/300  train 0.0225  val 0.0187  mr 0.75  pf 0.50  lr 1.15e-05
+epoch 294/300  train 0.0227  val 0.0200  mr 0.75  pf 0.50  lr 1.11e-05
+epoch 295/300  train 0.0233  val 0.0193  mr 0.75  pf 0.50  lr 1.08e-05
+epoch 296/300  train 0.0224  val 0.0190  mr 0.75  pf 0.50  lr 1.05e-05
+epoch 297/300  train 0.0211  val 0.0195  mr 0.75  pf 0.50  lr 1.03e-05
+epoch 298/300  train 0.0258  val 0.0189  mr 0.75  pf 0.50  lr 1.01e-05
+epoch 299/300  train 0.0210  val 0.0196  mr 0.75  pf 0.50  lr 1.00e-05
+epoch 300/300  train 0.0223  val 0.0198  mr 0.75  pf 0.50  lr 1.00e-05
+  test (n=181)  vis  0m  qc 11.290 MPa  fs 193.597 kPa
+  test (n=181)  vis  5m  qc 8.783 MPa  fs 144.999 kPa
+  test (n=181)  vis 10m  qc 8.952 MPa  fs 150.309 kPa
+  test (n=181)  vis 15m  qc 9.060 MPa  fs 159.521 kPa
+  test (n=181)  vis 20m  qc 9.875 MPa  fs 192.222 kPa

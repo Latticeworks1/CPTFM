@@ -1,0 +1,55 @@
+/Users/m1a4xnetworkprobe./Documents/CPTFM/cptfm/model.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(encoder_layer, num_layers=encoder_depth)
+/Users/m1a4xnetworkprobe./Documents/CPTFM/cptfm/model.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(encoder_layer, num_layers=encoder_depth)
+device: mps
+SatCLIP-only mode: ignoring Slepian features (256 dims)
+loaded persisted split from checkpoints/ablation_satclip_v2/split.json
+train: 3387  val: 423  test (held-out): 423
+qc [0.400, 42.130] MPa   fs [3.300, 1425.100] kPa
+tokenizer loaded  val_recon 0.0008  K=128  d_vq=32  depth_cond=True
+params: 8.33M
+--resume requested but no checkpoint found in checkpoints/ablation_satclip_v2 — starting fresh
+epoch   1/300  train 9.7313  val 5.7798  mr 0.50  pf 0.00  lr 9.29e-05  gn 44.522  t 715s  mps 271MB
+epoch   2/300  train 5.5800  val 4.5088  mr 0.50  pf 0.00  lr 1.93e-04  gn 15.745  t 177s  mps 289MB
+epoch   3/300  train 4.8001  val 4.3510  mr 0.50  pf 0.00  lr 2.93e-04  gn 12.157  t 167s  mps 290MB
+epoch   4/300  train 4.6704  val 4.3652  mr 0.50  pf 0.00  lr 3.93e-04  gn 14.019  t 143s  mps 290MB
+epoch   5/300  train 4.6909  val 4.1171  mr 0.50  pf 0.00  lr 4.93e-04  gn 14.566  t 139s  mps 289MB
+epoch   6/300  train 4.6422  val 4.3585  mr 0.50  pf 0.00  lr 5.93e-04  gn 12.654  t 144s  mps 290MB
+epoch   7/300  train 4.6866  val 4.3826  mr 0.50  pf 0.00  lr 6.93e-04  gn 11.614  t 151s  mps 290MB
+epoch   8/300  train 4.7575  val 4.3569  mr 0.50  pf 0.00  lr 7.93e-04  gn 12.391  t 139s  mps 289MB
+epoch   9/300  train 4.6833  val 4.3114  mr 0.50  pf 0.00  lr 8.93e-04  gn 9.849  t 146s  mps 290MB
+epoch  10/300  train 4.6310  val 4.1402  mr 0.50  pf 0.00  lr 9.93e-04  gn 9.866  t 139s  mps 290MB
+epoch  11/300  train 4.4074  val 3.9038  mr 0.50  pf 0.00  lr 1.00e-03  gn 6.647  t 166s  mps 289MB
+epoch  12/300  train 4.3125  val 3.8938  mr 0.50  pf 0.00  lr 1.00e-03  gn 6.862  t 152s  mps 290MB
+epoch  13/300  train 4.1400  val 3.6731  mr 0.50  pf 0.00  lr 1.00e-03  gn 6.373  t 142s  mps 290MB
+epoch  14/300  train 3.9176  val 3.4267  mr 0.50  pf 0.00  lr 1.00e-03  gn 7.242  t 143s  mps 289MB
+epoch  15/300  train 3.6829  val 3.3460  mr 0.50  pf 0.00  lr 9.99e-04  gn 5.529  t 146s  mps 290MB
+epoch  16/300  train 3.5831  val 3.1543  mr 0.50  pf 0.00  lr 9.99e-04  gn 5.536  t 150s  mps 290MB
+epoch  17/300  train 3.4457  val 3.0456  mr 0.50  pf 0.00  lr 9.99e-04  gn 5.095  t 160s  mps 289MB
+epoch  18/300  train 3.4015  val 3.1167  mr 0.50  pf 0.00  lr 9.98e-04  gn 5.995  t 161s  mps 290MB
+epoch  19/300  train 3.3689  val 2.9953  mr 0.50  pf 0.00  lr 9.98e-04  gn 5.822  t 4950s  mps 290MB
+epoch  20/300  train 3.2835  val 2.9171  mr 0.50  pf 0.00  lr 9.97e-04  gn 5.008  t 1235s  mps 289MB
+/Users/m1a4xnetworkprobe./Documents/CPTFM/cptfm/model.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(encoder_layer, num_layers=encoder_depth)
+/Users/m1a4xnetworkprobe./Documents/CPTFM/cptfm/model.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(encoder_layer, num_layers=encoder_depth)
+device: mps
+SatCLIP-only mode: ignoring Slepian features (256 dims)
+loaded persisted split from checkpoints/ablation_satclip_v2/split.json
+train: 3387  val: 423  test (held-out): 423
+qc [0.400, 42.130] MPa   fs [3.300, 1425.100] kPa
+tokenizer loaded  val_recon 0.0008  K=128  d_vq=32  depth_cond=True
+params: 8.33M
+resumed from last.pt epoch 20  best_val 2.9171 (block_val)
+epoch  21/300  train 3.2448  val 2.8892  mr 0.50  pf 0.00  lr 9.97e-04  gn 5.783  t 117s  mps 257MB
+epoch  22/300  train 3.2914  val 2.9695  mr 0.50  pf 0.00  lr 9.96e-04  gn 6.273  t 118s  mps 240MB
+epoch  23/300  train 3.1867  val 2.9137  mr 0.50  pf 0.00  lr 9.95e-04  gn 5.133  t 135s  mps 240MB
+epoch  24/300  train 3.1864  val 2.8320  mr 0.50  pf 0.00  lr 9.94e-04  gn 5.519  t 141s  mps 240MB
+epoch  25/300  train 3.0855  val 2.7767  mr 0.50  pf 0.00  lr 9.94e-04  gn 4.129  t 141s  mps 240MB
+  test (n=423)  vis  0m  qc 14.108 MPa  fs 619.792 kPa
+  test (n=423)  vis  5m  qc 10.505 MPa  fs 253.190 kPa
+  test (n=423)  vis 10m  qc 10.617 MPa  fs 219.986 kPa
+  test (n=423)  vis 15m  qc 10.162 MPa  fs 137.469 kPa
+  test (n=423)  vis 20m  qc 10.515 MPa  fs 138.175 kPa
+epoch  26/300  train 3.0995  val 2.7515  mr 0.50  pf 0.00  lr 9.93e-04  gn 5.190  t 152s  mps 240MB

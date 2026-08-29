@@ -1,0 +1,21 @@
+Loaded Slepian features (148 dims); total embedding dim: 404
+loaded 4243 sites from data/global_combined.npz
+Ic computed: mean 2.418  std 0.574
+finding top-10 partners per site (chunk=32) ...
+  32/4243
+  352/4243
+  672/4243
+  992/4243
+  1312/4243
+  1632/4243
+  1952/4243
+  2272/4243
+  2592/4243
+  2912/4243
+  3232/4243
+  3552/4243
+  3872/4243
+  4192/4243
+nearest-partner mean |ΔIc|: 0.1251 (over 500 sites)
+saved /Users/m1a4xnetworkprobe./Documents/CPTFM/data/ic_profiles.npy
+saved /Users/m1a4xnetworkprobe./Documents/CPTFM/data/scl_partners.npy

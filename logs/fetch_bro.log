@@ -1,0 +1,41 @@
+W0518 13:14:07.852000 39518 site-packages/torch/distributed/elastic/multiprocessing/redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+using pretrained moco resnet18
+Phase 1: collecting BRO IDs across Netherlands grid ...
+  tile 1/12  (52.37,4.89)  found 1210  new 1210  kept 250  total 250
+  tile 2/12  (51.92,4.48)  found 851  new 851  kept 250  total 500
+  tile 3/12  (52.07,4.31)  found 228  new 228  kept 228  total 728
+  tile 4/12  (52.09,5.12)  found 344  new 344  kept 250  total 978
+  tile 5/12  (53.22,6.57)  found 108  new 108  kept 108  total 1086
+  tile 6/12  (52.77,6.90)  found 5  new 5  kept 5  total 1091
+  tile 7/12  (52.52,6.09)  found 10  new 10  kept 10  total 1101
+  tile 8/12  (51.85,5.87)  found 200  new 200  kept 200  total 1301
+  tile 9/12  (51.44,5.46)  found 46  new 46  kept 46  total 1347
+  tile 10/12  (51.57,4.78)  found 15  new 15  kept 15  total 1362
+  tile 11/12  (51.22,5.85)  found 7  new 7  kept 7  total 1369
+  tile 12/12  (53.20,5.30)  found 0  new 0  kept 0  total 1369
+
+Phase 1 complete: 1369 unique IDs to fetch
+
+Phase 2: fetching soundings ...
+  100/1369  ok=74  failed=26
+  200/1369  ok=104  failed=96
+  300/1369  ok=136  failed=164
+  400/1369  ok=159  failed=241
+  500/1369  ok=210  failed=290
+  600/1369  ok=281  failed=319
+  700/1369  ok=311  failed=389
+  800/1369  ok=339  failed=461
+  900/1369  ok=370  failed=530
+  1000/1369  ok=443  failed=557
+  1100/1369  ok=514  failed=586
+  1200/1369  ok=611  failed=589
+  1300/1369  ok=708  failed=592
+
+Phase 2 complete: 719 soundings  503386 depth rows  650 fetch failures
+
+Wrote bro_data/bro_cpt.csv  (503386 rows)
+Phase 3: generating SatCLIP embeddings ...
+Wrote bro_data/bro_embeddings.npy  shape=(719, 256)
+Wrote bro_data/bro_embeddings.csv
+
+Done.

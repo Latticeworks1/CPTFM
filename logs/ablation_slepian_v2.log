@@ -1,0 +1,14 @@
+/Users/m1a4xnetworkprobe./Documents/CPTFM/cptfm/model.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(encoder_layer, num_layers=encoder_depth)
+/Users/m1a4xnetworkprobe./Documents/CPTFM/cptfm/model.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(encoder_layer, num_layers=encoder_depth)
+device: mps
+Slepian-only mode: replaced embeddings with Slepian features (148 dims)
+loaded persisted split from checkpoints/ablation_slepian_v2/split.json
+train: 3387  val: 423  test (held-out): 423
+qc [0.400, 42.130] MPa   fs [3.300, 1425.100] kPa
+tokenizer loaded  val_recon 0.0008  K=128  d_vq=32  depth_cond=True
+params: 8.27M
+--resume requested but no checkpoint found in checkpoints/ablation_slepian_v2 — starting fresh
+epoch   1/300  train 8.5344  val 5.1593  mr 0.50  pf 0.00  lr 9.29e-05  gn 38.211  t 184s  mps 270MB
+epoch   2/300  train 5.0553  val 4.3190  mr 0.50  pf 0.00  lr 1.93e-04  gn 14.277  t 5443s  mps 288MB

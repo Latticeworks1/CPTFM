@@ -1,0 +1,20 @@
+/Users/m1a4xnetworkprobe./Documents/CPTFM/cptfm/model.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(encoder_layer, num_layers=encoder_depth)
+device: mps
+Loaded Slepian features (148 dims); total embedding dim: 404
+loaded persisted split from checkpoints/clean_run/split.json
+train: 3387  val: 423  test (held-out): 423
+qc [0.400, 42.130] MPa   fs [3.300, 1425.100] kPa
+tokenizer loaded  val_recon 0.0008  K=128  d_vq=32  depth_cond=True
+params: 8.40M
+decorrelation term enabled (lambda=1e-05): satclip[0:256], global_sh[256:356], cap1[356:375], cap2[375:404]
+epoch   1/5  train 9.4226  val 5.9144  decorr(raw) 3264.3  mr 0.50  pf 0.00  lr 9.29e-05  gn 47.476  t 165s  mps 274MB
+epoch   2/5  train 5.5382  val 4.5422  decorr(raw) 2422.6  mr 0.50  pf 0.00  lr 1.93e-04  gn 15.982  t 164s  mps 292MB
+epoch   3/5  train 5.1281  val 4.3489  pval 4.5126  decorr(raw) 1539.5  mr 0.59  pf 0.19  lr 2.93e-04  gn 21.010  t 245s  mps 311MB
+epoch   4/5  train 5.0233  val 4.6261  pval 4.6935  decorr(raw) 1195.9  mr 0.72  pf 0.44  lr 3.93e-04  gn 20.183  t 3605s  mps 309MB
+epoch   5/5  train 5.3178  val 4.8728  pval 4.9507  decorr(raw) 961.3  mr 0.75  pf 0.67  lr 4.93e-04  gn 26.991  t 511s  mps 321MB
+  test (n=423)  vis  0m  qc 12.799 MPa  fs 518.570 kPa
+  test (n=423)  vis  5m  qc 10.464 MPa  fs 321.114 kPa
+  test (n=423)  vis 10m  qc 10.247 MPa  fs 355.999 kPa
+  test (n=423)  vis 15m  qc 11.206 MPa  fs 474.652 kPa
+  test (n=423)  vis 20m  qc 13.863 MPa  fs 659.807 kPa

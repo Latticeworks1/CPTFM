@@ -1,0 +1,9 @@
+/Users/m1a4xnetworkprobe./tools/PyGBS_src/gbs/ssi/surprisal.py:14: RuntimeWarning: divide by zero encountered in scalar divide
+  Mu_corrected += beta1 * self.mean_coef_dict[k] * self.mean_dict[k] / beta2
+ckpt=global_slepian  n_sites=421  median_qc_rmse=6.645 MPa  n_high_err=210  geom_hash=5f8bd00210fec87a
+radius=   1 km  n_scored=  56  obs=  5.6052  null_mu=  3.6966  null_sd= 1.8113  z=  1.054  p=0.1397  moran_I= 0.4255 (npair=832)
+radius=   5 km  n_scored= 110  obs= 14.6607  null_mu=  7.7026  null_sd= 2.5789  z=  2.698  p=0.0140  moran_I= 0.4215 (npair=1428)
+radius=  25 km  n_scored= 333  obs= 10.7495  null_mu=  5.6885  null_sd= 1.5472  z=  3.271  p=0.0060  moran_I= 0.4099 (npair=5596)
+radius= 100 km  n_scored= 400  obs= 35.2435  null_mu= 18.2237  null_sd= 5.2063  z=  3.269  p=0.0020  moran_I= 0.3825 (npair=34454)
+radius= 500 km  n_scored= 421  obs=183.5030  null_mu=107.0741  null_sd=17.3171  z=  4.414  p=0.0020  moran_I= 0.3710 (npair=64102)
+wrote data/geo_bias_score_report_global_slepian.json
