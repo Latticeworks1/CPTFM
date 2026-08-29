@@ -54,10 +54,13 @@ def main():
     test_sites  = set(split["test"])
     print(f"persisted split: train={len(train_sites)}  val={len(split['val'])}  test={len(test_sites)}")
 
-    ds = CPTDataset(args.cpt_csv)
+    tok, mae_model, mc = load_pipeline(args.ckpt_dir)
+    train_cfg = mc["args"]
+    ds = CPTDataset(args.cpt_csv,
+                    slepian_only=train_cfg.get("slepian_only", False),
+                    satclip_only=train_cfg.get("satclip_only", False))
     site_to_idx = {str(s): i for i, s in enumerate(ds.site_ids)}
 
-    tok, mae_model, mc = load_pipeline(args.ckpt_dir)
     if "norm" in mc:
         ds.qc_lo = mc["norm"]["qc_lo"]; ds.qc_hi = mc["norm"]["qc_hi"]
         ds.fs_lo = mc["norm"]["fs_lo"]; ds.fs_hi = mc["norm"]["fs_hi"]

@@ -80,10 +80,13 @@ def main():
     train_lat = np.array([coords[s][0] for s in train_sites])
     train_lon = np.array([coords[s][1] for s in train_sites])
 
-    ds = CPTDataset(args.cpt_csv)
+    tok, mae, mc = load_pipeline(args.ckpt_dir)
+    train_cfg = mc["args"]
+    ds = CPTDataset(args.cpt_csv,
+                    slepian_only=train_cfg.get("slepian_only", False),
+                    satclip_only=train_cfg.get("satclip_only", False))
     site_to_idx = {str(s): i for i, s in enumerate(ds.site_ids)}
 
-    tok, mae, mc = load_pipeline(args.ckpt_dir)
     if "norm" in mc:
         ds.qc_lo = mc["norm"]["qc_lo"]; ds.qc_hi = mc["norm"]["qc_hi"]
         ds.fs_lo = mc["norm"]["fs_lo"]; ds.fs_hi = mc["norm"]["fs_hi"]
@@ -197,7 +200,9 @@ def main():
 
     out_path = "data/spatial_holdout_eval.csv"
     df.to_csv(out_path, index=False)
-    print(f"\nper-site results written to {out_path}")
+    ckpt_copy = os.path.join(args.ckpt_dir, "spatial_holdout_eval.csv")
+    df.to_csv(ckpt_copy, index=False)
+    print(f"\nper-site results written to {out_path} and {ckpt_copy}")
 
 
 if __name__ == "__main__":
