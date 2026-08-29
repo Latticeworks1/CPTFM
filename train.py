@@ -206,7 +206,8 @@ def test_eval(tok, model, ds, test_indices, device, depth_norm_dev, tok_depth_co
 
 def main(args):
     device = (
-        torch.device("mps") if torch.backends.mps.is_available()
+        torch.device("cuda") if torch.cuda.is_available()
+        else torch.device("mps") if torch.backends.mps.is_available()
         else torch.device("cpu")
     )
     print(f"device: {device}")
@@ -577,14 +578,18 @@ def main(args):
         # (rarer) eval_interval cadence.
         if device.type == "mps" and hasattr(torch.mps, "empty_cache"):
             torch.mps.empty_cache()
+        elif device.type == "cuda":
+            torch.cuda.empty_cache()
 
         if (epoch + 1) % args.eval_interval == 0 or epoch == args.epochs - 1:
             res = test_eval(
                 tok, model, ds, list(test_ds.indices), device,
                 depth_norm_dev, tok_depth_cond,
             )
-            if hasattr(torch.mps, "empty_cache"):
+            if device.type == "mps" and hasattr(torch.mps, "empty_cache"):
                 torch.mps.empty_cache()
+            elif device.type == "cuda":
+                torch.cuda.empty_cache()
             n_t = len(test_ds)
             for vis_m in VISIBLE_DEPTHS:
                 if vis_m in res:
